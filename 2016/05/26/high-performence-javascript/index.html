@@ -1,0 +1,722 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="读书笔记," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
+
+
+
+
+
+
+<meta name="description" content="本书推荐指数：4星">
+<meta property="og:type" content="article">
+<meta property="og:title" content="high performence javascript(高性能JavaScript)">
+<meta property="og:url" content="http://bmxklYzj.github.io/2016/05/26/high-performence-javascript/index.html">
+<meta property="og:site_name" content="bmxklYzj">
+<meta property="og:description" content="本书推荐指数：4星">
+<meta property="og:updated_time" content="2016-05-26T11:49:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="high performence javascript(高性能JavaScript)">
+<meta name="twitter:description" content="本书推荐指数：4星">
+
+
+
+<script type="text/javascript" id="hexo.configuration">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    scheme: 'Mist',
+    sidebar: {"position":"right","display":"post"},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: 0,
+      author: '博主'
+    }
+  };
+</script>
+
+  <title> high performence javascript(高性能JavaScript) | bmxklYzj </title>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?b8e3c7f6c7a766be54b26cb3275681c9";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-meta ">
+  
+
+  <div class="custom-logo-site-title">
+    <a href="/"  class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <span class="site-title">bmxklYzj</span>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+  <p class="site-subtitle">Where there is cirses, there is motivation.</p>
+</div>
+
+<div class="site-nav-toggle">
+  <button>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+    <span class="btn-bar"></span>
+  </button>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                high performence javascript(高性能JavaScript)
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-26T19:49:34+08:00" content="2016-05-26">
+              2016-05-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/readingNote/" itemprop="url" rel="index">
+                    <span itemprop="name">readingNote</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/05/26/high-performence-javascript/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/26/high-performence-javascript/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>本书推荐指数：4星<br><a id="more"></a></p>
+</blockquote>
+<h1 id="第一章-加载和执行"><a href="#第一章-加载和执行" class="headerlink" title="第一章 加载和执行"></a>第一章 加载和执行</h1><ol>
+<li><p>浏览器使用单一线程来处理用户界面（UI）刷新和JavaScript脚本，同一时刻只能做一件事。当浏览器在执行JavaScript代码时不能做其他的事情，比如相应用户点击按钮、刷新UI等</p>
+</li>
+<li><p>无论JavaScript代码是内嵌还是包含在外部文件中，页面的下载和渲染都必须要停下来等待脚本执行完成</p>
+</li>
+<li>浏览器都允许并行下载js文件，但是js下载过程中仍然会阻塞其他资源的下载，比如图片。尽管脚本的下载过程不会相互影响，但页面仍然要等到所有的js代码下载并执行完毕才能继续。</li>
+<li><p>无阻塞的脚本：</p>
+<ul>
+<li><p>defer和async。相同点是采用并行下载，在下载过程中不会阻塞。区别在于执行时机：async是在加载完成后立马自动执行，而defer是并行下载之后再onload事件之前执行。（注意标准规定defer只能在外部脚本中起作用）</p>
+</li>
+<li><p>动态脚本元素：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</div><div class="line">script.type = <span class="string">"type/javascript"</span>;</div><div class="line">script.src = <span class="string">"xxx.js"</span>;</div><div class="line"><span class="built_in">document</span>.getElementsByTagName(<span class="string">"head"</span>)[<span class="number">0</span>].appendChild(<span class="string">"script"</span>);</div></pre></td></tr></table></figure>
+<p>  文本在被添加到页面时开始下载并立即执行，但不会阻塞页面其他进程。</p>
+</li>
+<li><p>XMLHttpRequest 脚本注入<br>使用XMLHttpRequest对象获取脚本并注入到页面中</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> xhr = <span class="keyword">new</span> XMLHttpRequest();</div><div class="line">xhr.open(<span class="string">"get"</span>, <span class="string">"file1.js"</span>, <span class="literal">true</span>);</div><div class="line">xhr.onreadystatechange() &#123;</div><div class="line">	<span class="keyword">if</span>(xhr.readyState == <span class="number">4</span>) &#123;</div><div class="line">		<span class="keyword">if</span>(xhr.staus &gt;= <span class="number">200</span> &amp;&amp; xhr.status &lt; <span class="number">300</span> || xhr.status == <span class="number">304</span>) &#123;</div><div class="line">			<span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">"script"</span>);</div><div class="line">			script.type = <span class="string">"type/javascript"</span>;</div><div class="line">			script.text = xhr.responseText;</div><div class="line">			<span class="built_in">document</span>.body.appendChild(script);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ol>
+<h1 id="数据存取"><a href="#数据存取" class="headerlink" title="数据存取"></a>数据存取</h1><h2 id="js中有四种基本的数据存取位置："><a href="#js中有四种基本的数据存取位置：" class="headerlink" title="js中有四种基本的数据存取位置："></a>js中有四种基本的数据存取位置：</h2><ol>
+<li>字面量：字符串、数字、布尔值、对象、数组、函数、正则表达式、null、undefined</li>
+<li>本地变量：用var定义的数据存储单元</li>
+<li>数组元素：存储在js数组对象内部，以数字为索引</li>
+<li>对象成员：存储在js对象内部，以字符串为索引<br>字面量和本地变量的访问速度快于数组项和对象成员的访问速度</li>
+</ol>
+<h2 id="标识符解析的性能："><a href="#标识符解析的性能：" class="headerlink" title="标识符解析的性能："></a>标识符解析的性能：</h2><ol>
+<li>一个标识符所在的位置越深，读取的速度也就越慢。因此函数中读取局部变量总是最快的，而读取全局变量总是最慢的。</li>
+<li>如果某个跨作用域的值在函数中被引用一次以上，那么就把它存储到局部变量里。</li>
+</ol>
+<h2 id="改变作用域链："><a href="#改变作用域链：" class="headerlink" title="改变作用域链："></a>改变作用域链：</h2><ul>
+<li>with</li>
+<li>try-catch语句中catch从句<br>他们的本质都是把一个新的变量对象插入到作用域链的首部，然后函数的局部变量就处于第二个作用域链对象中，因此访问的代价更高了。<br>使用with时，一个新的变量对象被创建，它包含了参数指定的对象的所有属性，此对象被推入作用域链的首部。catch从句是把一个错误对象插入到作用域链的首部</li>
+</ul>
+<h1 id="DOM-编程"><a href="#DOM-编程" class="headerlink" title="DOM 编程"></a>DOM 编程</h1><p>文档对象模型（DOM）是一个独立于语言的，用于操作XML和HTML文档的程序接口，使用DOM API来访问文档中的数据<br>操作DOM很慢：把DOM和ECMAScript比作是一个岛屿，它们之间用收费桥梁连接，ECMAScript每次访问DOM都需要成本。<br>最佳实践：减少访问DOM的次数，把运算尽量留在ECMAScript这一端处理</p>
+<h2 id="只返回元素节点的API"><a href="#只返回元素节点的API" class="headerlink" title="只返回元素节点的API"></a>只返回元素节点的API</h2><p>忽略注释和文本节点（通常只是两个节点间的空白）<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">children                childNodes</div><div class="line">childElementCount       childNodes.length</div><div class="line">firstElementChild       firstChild</div><div class="line">lastElementChild        lastChild</div><div class="line">nextElementSibling      nextSibling</div><div class="line">previousElementSibling  previousSibling</div></pre></td></tr></table></figure></p>
+<h2 id="使用高效的选择器API"><a href="#使用高效的选择器API" class="headerlink" title="使用高效的选择器API"></a>使用高效的选择器API</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">querySelector();querySelectorAll();</div></pre></td></tr></table></figure>
+<h2 id="重绘与重排"><a href="#重绘与重排" class="headerlink" title="重绘与重排"></a>重绘与重排</h2><p>浏览器将页面中所有组件下载完成之后会生成两个内部数据结构：<br>DOM树：表示页面结构<br>渲染树：表示DOM节点如何显示</p>
+<p>DOM树中的一个节点至少对应渲染树中的一个节点（隐藏的DOM元素在渲染树中没有对应的节点），DOM树和渲染树构建完成，浏览器就开始绘制页面元素<br>并不是所有的DOM变化都会影响几何属性，比如改变一个元素的背景色并不会影响其位置和大小，这是只会触发重绘而不需要重排</p>
+<h2 id="重排何时发生："><a href="#重排何时发生：" class="headerlink" title="重排何时发生："></a>重排何时发生：</h2><ol>
+<li>添加或删除<strong>可见</strong>的DOM元素</li>
+<li>元素位置改变</li>
+<li>元素大小改变（如margin、border、padding、width、height改变）</li>
+<li>内容改变：文本改变或图片被另一个不同尺寸的图片替代</li>
+<li>页面渲染器初始化</li>
+<li>浏览器窗口尺寸变化</li>
+</ol>
+<h2 id="最小化重排与重绘"><a href="#最小化重排与重绘" class="headerlink" title="最小化重排与重绘"></a>最小化重排与重绘</h2><h3 id="改变样式：使用cssText或css类"><a href="#改变样式：使用cssText或css类" class="headerlink" title="改变样式：使用cssText或css类"></a>改变样式：使用cssText或css类</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.getElementById(<span class="string">"mydiv"</span>);</div><div class="line">el.style.borderLeft = <span class="string">"1px"</span>;</div><div class="line">el.style.borderRight = <span class="string">"2px"</span>;</div><div class="line">el.style.padding = <span class="string">"5px"</span>;</div><div class="line"></div><div class="line"><span class="comment">//改进：使用cssText</span></div><div class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.getElementById(<span class="string">"mydiv"</span>);</div><div class="line">el.style.cssText = <span class="string">"border-left: 1px; border-right: 2px; padding: 5px;"</span>;</div><div class="line"></div><div class="line"><span class="comment">//另一种改进方式：使用js操作css类，做到js和css分离</span></div><div class="line"><span class="keyword">var</span> el = <span class="built_in">document</span>.getElementById(<span class="string">"mydiv"</span>);</div><div class="line">el.className = <span class="string">"xxx"</span>;</div><div class="line"><span class="comment">//el.classList.toggle("xxx");</span></div></pre></td></tr></table></figure>
+<h3 id="批量修改DOM元素，减少重排和重绘"><a href="#批量修改DOM元素，减少重排和重绘" class="headerlink" title="批量修改DOM元素，减少重排和重绘"></a>批量修改DOM元素，减少重排和重绘</h3><p>步骤：</p>
+<blockquote>
+<ol>
+<li>使元素脱离文档流</li>
+<li>对元素应用多重改变</li>
+<li>把元素带回文档中</li>
+</ol>
+</blockquote>
+<p>有三种方法使元素脱离文档流</p>
+<ol>
+<li>隐藏元素，应用修改，重新显示</li>
+<li>使用文档片断（documentFragment），在DOM之外构造一个子树，然后把它拷贝回文档</li>
+<li>将原始元素拷贝到一个脱离文档的副本中，修改副本，完成后再替换原始元素</li>
+</ol>
+<h1 id="创建快速相应的用户界面"><a href="#创建快速相应的用户界面" class="headerlink" title="创建快速相应的用户界面"></a>创建快速相应的用户界面</h1><p>js的单个运行任务不要超过100ms，否则会让用户感觉到明显的缓慢</p>
+<p>解决办法：</p>
+<ol>
+<li>使用定时器分割任务</li>
+<li>使用worker在UI线程之外运行代码（创建多线程）</li>
+</ol>
+<h1 id="编程实战"><a href="#编程实战" class="headerlink" title="编程实战"></a>编程实战</h1><h2 id="避免双重求值"><a href="#避免双重求值" class="headerlink" title="避免双重求值"></a>避免双重求值</h2><p>js中运行包含代码的字符串有四种方式：</p>
+<ol>
+<li>eval()</li>
+<li>function()构造函数</li>
+<li>setTiemeout()</li>
+<li>setInterval()<br>他们允许传入一个js代码字符串并执行它<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> num1 = <span class="number">1</span>,</div><div class="line">	num2 = <span class="number">2</span>,</div><div class="line">resEval = <span class="built_in">eval</span>(<span class="string">"num1 + num2"</span>);</div><div class="line">resFunction = <span class="keyword">new</span> <span class="built_in">Function</span>(<span class="string">"arg1"</span>, <span class="string">"arg2"</span>, <span class="string">"return arg1 + arg2"</span>);</div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span>(<span class="params"></span>) </span>&#123;</div><div class="line">	<span class="built_in">console</span>.log(num1 + num2);</div><div class="line">&#125;;</div><div class="line"><span class="built_in">console</span>.log(resEval);</div><div class="line"><span class="built_in">console</span>.log(resFunction(num1, num2));</div><div class="line"></div><div class="line">setTimeut(sum, <span class="number">1000</span>);		<span class="comment">//使用此种方式而非下一行的方式</span></div><div class="line">setTimeout(<span class="string">"sum()"</span>, <span class="number">1000</span>);</div><div class="line"><span class="comment">//setInterval()函数同理</span></div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>以上四种方法都是在JavaScript代码中执行另一段JavaScript代码，这回导致双重求值的性能消耗，此代码先会正常求值，然后在执行过程中对包含在字符串中的代码发起另一次求值运算。</p>
+<h2 id="使用Object-Array直接量而不是对象"><a href="#使用Object-Array直接量而不是对象" class="headerlink" title="使用Object/Array直接量而不是对象"></a>使用Object/Array直接量而不是对象</h2><p>对象字面量和数组字面量运行更快，有助于节省代码量</p>
+<h2 id="避免重复工作"><a href="#避免重复工作" class="headerlink" title="避免重复工作"></a>避免重复工作</h2><p>还记得时间处理时候的eventUtil对象吗？<br><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div></pre></td><td class="code"><pre><div class="line">addHandler: <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span>(element.addEventListener) &#123;</div><div class="line">            element.addEventListener(type, handler, <span class="literal">false</span>);</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(element.attachEvent) &#123;</div><div class="line">            element.attachEvent(<span class="string">'on'</span>+type, handler);</div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            element[<span class="string">'on'</span>+type] = handler;</div><div class="line">        &#125;</div><div class="line">    &#125;,</div><div class="line">    <span class="comment">/*</span></div><div class="line">    上一种方式的问题在于每一次运行addHandler函数的时候都要进行能力检测，然而第二次</div><div class="line">    检测是完全没有必要的，故采用延迟加载模式，方法在第一次被调用时检查使用哪种事件处理程序。然后原始函数被包含正确操作的新函数覆盖。</div><div class="line"></div><div class="line">    addHandler: function(element, type, handler) &#123;</div><div class="line">        //重写函数</div><div class="line">        if(element.addEventListener) &#123;</div><div class="line">            addHandler = function(element, type, handler) &#123;</div><div class="line">                element.addEventListener(type, handler, false);</div><div class="line">            &#125;</div><div class="line">        &#125; else if(element.attachEvent) &#123;</div><div class="line">            addHandler = function(element, type, handler) &#123;</div><div class="line">                element.attachEvent('on'+type, handler);</div><div class="line">            &#125;</div><div class="line">        &#125; else &#123;</div><div class="line">            addHandler = function(element, type, handler) &#123;</div><div class="line">                element['on'+type] = handler;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        //调用函数</div><div class="line">        addHandler(element, type, handler);</div><div class="line">    &#125;,*/</div></pre></td></tr></table></figure></p>
+<h2 id="使用位运算加快速度"><a href="#使用位运算加快速度" class="headerlink" title="使用位运算加快速度"></a>使用位运算加快速度</h2><blockquote>
+<p>按位与<code>&amp;</code><br>按位或<code>|</code><br>按位异或<code>^</code><br>按位取反<code>~</code></p>
+</blockquote>
+<p>比如判断奇偶<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var i = 5;</div><div class="line">if(i % 2) &#123;				//odd</div><div class="line">	console.log(&quot;odd&quot;);</div><div class="line">&#125; else &#123;				//even</div><div class="line">	console.log(&quot;even&quot;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//使用位运算判断更快！</div><div class="line">if(i &amp; 1) &#123;				//odd</div><div class="line">	console.log(&quot;odd&quot;);</div><div class="line">&#125; else &#123;				//even</div><div class="line">	console.log(&quot;even&quot;);</div><div class="line">&#125;</div><div class="line">/**</div><div class="line"> 如果函数是奇数，那么其最低位是1，与1&amp;的结果是1（true）</div><div class="line"> 如果函数是偶数，那么其最低位是0，与1&amp;的结果是0（false）</div><div class="line"> */</div></pre></td></tr></table></figure></p>
+
+      
+    </div>
+
+    <div>
+      
+        
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/读书笔记/" rel="tag">#读书笔记</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/25/interview/" rel="next" title="渣渣的艰难的找实习经历">
+                <i class="fa fa-chevron-left"></i> 渣渣的艰难的找实习经历
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/05/31/whyPracticeSoHard/" rel="prev" title="为什么想要去实习就这么难？">
+                为什么想要去实习就这么难？ <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/26/high-performence-javascript/"
+           data-title="high performence javascript(高性能JavaScript)" data-url="http://bmxklYzj.github.io/2016/05/26/high-performence-javascript/">
+      </div>
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel ">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/uploads/snail.jpg"
+               alt="bmxklYzj" />
+          <p class="site-author-name" itemprop="name">bmxklYzj</p>
+          <p class="site-description motion-element" itemprop="description"></p>
+        </div>
+        <nav class="site-state motion-element">
+          <div class="site-state-item site-state-posts">
+            <a href="/archives">
+              <span class="site-state-item-count">9</span>
+              <span class="site-state-item-name">日志</span>
+            </a>
+          </div>
+
+          
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            <div class="site-state-item site-state-tags">
+              <a href="/tags">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+      </section>
+
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#第一章-加载和执行"><span class="nav-number">1.</span> <span class="nav-text">第一章 加载和执行</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据存取"><span class="nav-number">2.</span> <span class="nav-text">数据存取</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#js中有四种基本的数据存取位置："><span class="nav-number">2.1.</span> <span class="nav-text">js中有四种基本的数据存取位置：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#标识符解析的性能："><span class="nav-number">2.2.</span> <span class="nav-text">标识符解析的性能：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改变作用域链："><span class="nav-number">2.3.</span> <span class="nav-text">改变作用域链：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#DOM-编程"><span class="nav-number">3.</span> <span class="nav-text">DOM 编程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#只返回元素节点的API"><span class="nav-number">3.1.</span> <span class="nav-text">只返回元素节点的API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用高效的选择器API"><span class="nav-number">3.2.</span> <span class="nav-text">使用高效的选择器API</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重绘与重排"><span class="nav-number">3.3.</span> <span class="nav-text">重绘与重排</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#重排何时发生："><span class="nav-number">3.4.</span> <span class="nav-text">重排何时发生：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#最小化重排与重绘"><span class="nav-number">3.5.</span> <span class="nav-text">最小化重排与重绘</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#改变样式：使用cssText或css类"><span class="nav-number">3.5.1.</span> <span class="nav-text">改变样式：使用cssText或css类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#批量修改DOM元素，减少重排和重绘"><span class="nav-number">3.5.2.</span> <span class="nav-text">批量修改DOM元素，减少重排和重绘</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建快速相应的用户界面"><span class="nav-number">4.</span> <span class="nav-text">创建快速相应的用户界面</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#编程实战"><span class="nav-number">5.</span> <span class="nav-text">编程实战</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#避免双重求值"><span class="nav-number">5.1.</span> <span class="nav-text">避免双重求值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用Object-Array直接量而不是对象"><span class="nav-number">5.2.</span> <span class="nav-text">使用Object/Array直接量而不是对象</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#避免重复工作"><span class="nav-number">5.3.</span> <span class="nav-text">避免重复工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用位运算加快速度"><span class="nav-number">5.4.</span> <span class="nav-text">使用位运算加快速度</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2016</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">bmxklYzj</span>
+</div>
+
+<div class="powered-by">
+  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Mist
+  </a>
+</div>
+
+        
+
+        
+      </div>
+    </footer>
+
+    <div class="back-to-top">
+      <i class="fa fa-arrow-up"></i>
+    </div>
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
+
+
+
+  
+
+  
+    
+  
+
+  <script type="text/javascript">
+    var duoshuoQuery = {short_name:"bmxklyzj"};
+    (function() {
+      var ds = document.createElement('script');
+      ds.type = 'text/javascript';ds.async = true;
+      ds.id = 'duoshuo-script';
+      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+      ds.charset = 'UTF-8';
+      (document.getElementsByTagName('head')[0]
+      || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+  </script>
+
+  
+    
+  
+
+
+
+
+
+  
+  
+  
+
+  
+
+  
+
+</body>
+</html>
