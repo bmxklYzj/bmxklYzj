@@ -270,6 +270,756 @@
             
               
                 
+                <a class="post-title-link" href="/2016/08/18/border-radius 制作各种形状/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-18T18:53:42+08:00" content="2016-08-18">
+              2016-08-18
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/18/border-radius 制作各种形状/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/18/border-radius 制作各种形状/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="border-radius-制作各种形状"><a href="#border-radius-制作各种形状" class="headerlink" title="border-radius 制作各种形状"></a>border-radius 制作各种形状</h1><h2 id="深入理解-border-radius"><a href="#深入理解-border-radius" class="headerlink" title="深入理解 border-radius"></a>深入理解 border-radius</h2><p>以前常用的关于 border-radius 属性的就是</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">border-radius: 100px;</div><div class="line">border-radius: 50%;</div><div class="line"></div><div class="line">border-top-left-radius: 5px;</div><div class="line">border-top-right-radius: 5px;</div><div class="line">border-bottom-right-radius: 5px;</div><div class="line">border-bottom-left-radius: 5px;</div></pre></td></tr></table></figure>
+<p>但其实border-radius 还有很多属性，可以用来画出各种形状</p>
+<p>link:</p>
+<ol>
+<li><a href="http://www.jianshu.com/p/ca82b9ba9107#" target="_blank" rel="external">透彻易懂的博文：CSS3 border-radius介绍</a></li>
+<li><a href="http://www.zhangxinxu.com/wordpress/2015/11/css3-border-radius-tips/" target="_blank" rel="external">zhangxinxu： 有个很好的demo</a></li>
+</ol>
+<p><code>border-radius: 100px 25px 50px 50px / 50px 25px 50px 25px;</code><br>/斜杠前是水平方向圆角半径，斜杠后是垂直方向圆角半径。顺序同样遵守TRBL（Top-Right-Bottom-Left）原则，依此是上右下左的圆角水平半径 / 上右下左的圆角垂直半径。一图胜千言：（将代码和图对照着看一下，很容易就能明白）<br><img src="media/14715176225201/14715188884293.jpg" alt=""></p>
+<p>需要注意的地方：</p>
+<ol>
+<li>属性值的写法:  水平半径 / 垂直半径</li>
+</ol>
+<blockquote>
+<p>如果我们只写一个值的话，比如： <code>border-radius: 100px</code> 等价于 <code>border-radius: 100px / 100px</code> ，默认水平和垂直半径是相等的。在这种情况下，相邻圆角弧度发生重叠的条件是：px值超过了长宽中最小值的一半 或 %值超过了50%。<br>一旦超过相邻圆角弧度发生重叠的限制条件：</p>
+<ol>
+<li>若只写一个值的话，比如： <code>border-radius: 100px</code> 或  <code>border-radius: 100%</code>，则半径为长宽中最小值的一半</li>
+<li>若写了两个值（且相邻圆角弧度发生重叠）如 <code>border-radius: 100px / 200px</code> 则半径按照比例（100：200） </li>
+</ol>
+</blockquote>
+<ol>
+<li>半径的临界点是50%</li>
+</ol>
+<blockquote>
+<p>对正方形来说，单值的border-radius超过50%或大于超过正方形半径的px值时，仍旧是个完美的圆。</p>
+</blockquote>
+<p>link：利用border-radius 和 伪元素::before/::after 制作图形</p>
+<ol>
+<li><a href="http://www.cssportal.com/css3-shapes/#" target="_blank" rel="external">border-radius 制作各种图形</a></li>
+<li><a href="https://css-tricks.com/examples/ShapesOfCSS/" target="_blank" rel="external">The Shapes of CSS</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/18/深入伪元素 ::before,::after/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-18T13:40:09+08:00" content="2016-08-18">
+              2016-08-18
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/18/深入伪元素 ::before,::after/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/18/深入伪元素 ::before,::after/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="深入伪元素-before-after"><a href="#深入伪元素-before-after" class="headerlink" title="深入伪元素 ::before,::after"></a>深入伪元素 ::before,::after</h1><h2 id="content"><a href="#content" class="headerlink" title="content"></a>content</h2><p>content的值可以为以下几种：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">1. content: &quot;&quot;;			// 为空</div><div class="line">2. content: &quot;foo&quot;;			// 非空字符串</div><div class="line">3. content: attr(attitube); 	// attitube可以是 href title src 等等</div><div class="line">4. content: url(&apos;image.png&apos;); //图片，声频，视频或浏览器支持的其他任何资源</div></pre></td></tr></table></figure>
+<p>注意：content的内容包含标签的时候会当成字符串而不会渲染标签，如<code>content: &quot;&lt;p&gt;a paragraph&lt;/p&gt;&quot;</code>  最后显示的是 <code>&lt;p&gt;a paragraph&lt;/p&gt;</code></p>
+<ol>
+<li><a href="http://www.w3cplus.com/solution/css3content/css3content.html" target="_blank" rel="external">大漠-w3cplus: css3 content 生成内容</a></li>
+<li><a href="https://css-tricks.com/almanac/selectors/a/after-and-before/" target="_blank" rel="external">css-tricks:content</a></li>
+</ol>
+<p>link：</p>
+<ol>
+<li><a href="http://www.w3cplus.com/solution/css3content/css3content.html" target="_blank" rel="external">大漠-w3cplus: css3 content 生成内容</a></li>
+<li><a href="https://css-tricks.com/almanac/selectors/a/after-and-before/" target="_blank" rel="external">css-tricks:content</a></li>
+<li><a href="https://css-tricks.com/pseudo-element-roundup/" target="_blank" rel="external">css-tricks: 伪元素可以干什么</a></li>
+<li><a href="https://css-tricks.com/examples/ShapesOfCSS/" target="_blank" rel="external">伪元素生成各种图形</a><br>5.. <a href="http://www.cnblogs.com/keepfool/p/5616326.html" target="_blank" rel="external">实战伪元素制作图形</a></li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/17/pointer-events 属性/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-17T19:42:39+08:00" content="2016-08-17">
+              2016-08-17
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/17/pointer-events 属性/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/17/pointer-events 属性/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="pointer-events-属性"><a href="#pointer-events-属性" class="headerlink" title="pointer-events 属性"></a>pointer-events 属性</h1><h2 id="pointer-events"><a href="#pointer-events" class="headerlink" title="pointer-events"></a>pointer-events</h2><p><a href="https://www.qianduan.net/css3-pointer-event-description/" target="_blank" rel="external">神飞-前端观察</a><br><a href="https://css-tricks.com/almanac/properties/p/pointer-events/" target="_blank" rel="external">css-tricks</a></p>
+<p>这个问题其实也是从给 select 添加伪类的时候发现了这个属性，如下图，select 标签不能直接添加伪元素，于是借用就是给与其绑定的label 标签为 select 添加一个三角，但是发现点击三角并不能弹出 option 选项，看到stof别人的代码有这样一行 <code>pointer-events: none;</code> 果真见效，于是开始探索。<br><img src="media/14714341595028/14714345271212.jpg" alt=""><br>html</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">&lt;div class=&quot;select-wrap&quot;&gt;</div><div class="line">  &lt;select id=&quot;health-level&quot; class=&quot;nuomi-search select&quot;&gt;</div><div class="line">      &lt;option value=&quot;0&quot;&gt;全部&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;1&quot;&gt;高级&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;2&quot;&gt;中级&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;3&quot;&gt;初级&lt;/option&gt;</div><div class="line">      &lt;option value=&quot;4&quot;&gt;不及格&lt;/option&gt;</div><div class="line">  &lt;/select&gt;</div><div class="line">  &lt;label for=&quot;health-level&quot; class=&quot;select-icon&quot;&gt;&lt;/label&gt;</div><div class="line">&lt;/div&gt;</div></pre></td></tr></table></figure>
+<p>css</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">.select &#123;</div><div class="line">  appearance: none;</div><div class="line">  -moz-appearance: none;</div><div class="line">  -webkit-appearance: none;</div><div class="line">  border-radius: 0;</div><div class="line">  background-color: #fff;</div><div class="line">  padding-left: 20px;</div><div class="line">  height: 36px;</div><div class="line">  font: inherit;</div><div class="line">&#125;</div><div class="line">.select-wrap &#123;</div><div class="line">  position: relative;</div><div class="line">  display: inline-block;</div><div class="line">&#125;</div><div class="line">.select-icon &#123;</div><div class="line">  display: inline-block;</div><div class="line">  position: absolute;</div><div class="line">  border-top: 5px solid #000;</div><div class="line">  border-right: 5px solid transparent;</div><div class="line">  border-bottom: 5px solid transparent;</div><div class="line">  border-left: 5px solid transparent;</div><div class="line">  right: 0px;</div><div class="line">  top: 45%;</div><div class="line">  pointer-events: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>pointer-events :none; 简单的说就是让 Z 轴上 应用了此属性的元素变成穿透的，仿佛他不存在，因此我们可以看到穿透效果。<br>比方说下图，正常情况下上次文字能选中，下层文字由于上次的遮挡不能选中，但是<br>我们给上层遮罩层使用了<code>pointer-events :none;</code> 属性后，然后他本身的文字就不能选中，而下面一层的文字能够选中<br><img src="media/14714341595028/14714415529936.jpg" alt=""></p>
+<h2 id="说说-pointer-属性吧"><a href="#说说-pointer-属性吧" class="headerlink" title="说说 pointer 属性吧"></a>说说 pointer 属性吧</h2><p>我们对 pointer 属性都不陌生，常见的比方说：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">pointer: cursor; //把鼠标的指针变成手形的，提示用户可以点击</div></pre></td></tr></table></figure>
+<p>深扒 pointer：<br>pointer的属性真的是多如牛毛， <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/cursor" target="_blank" rel="external">link：mdn cursor</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/16/select:after 伪元素并不是能用在任何地方的/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-16T14:15:40+08:00" content="2016-08-16">
+              2016-08-16
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/16/select:after 伪元素并不是能用在任何地方的/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/16/select:after 伪元素并不是能用在任何地方的/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="select-after-伪元素并不是能用在任何地方的"><a href="#select-after-伪元素并不是能用在任何地方的" class="headerlink" title="select:after 伪元素并不是能用在任何地方的"></a>select:after 伪元素并不是能用在任何地方的</h1><p>之前区分过 伪类和伪元素，简言之：（详情见附录）</p>
+<blockquote>
+<p>伪类：可以用添加一个类来代替<br>伪元素：必须使用额外的标签才能代替</p>
+</blockquote>
+<p>今天遇到了一个问题是 需要自定义select元素的样式</p>
+<p>预期样式：<br><img src="media/14713281407997/14713284833181.jpg" alt=""></p>
+<p>而默认样式是：<br><img src="media/14713281407997/14713285084649.jpg" alt=""></p>
+<p>很自然的那个下三角想到要用：after伪元素来实现，但是就是没效果。经调研才知道不能给select元素添加伪元素。</p>
+<h2 id="探索："><a href="#探索：" class="headerlink" title="探索："></a>探索：</h2><p>我想原因应该是 slect 中只能包含 option 标签，如果是插入非 option 标签那么他就会忽略。而一些没有结束的标签如input、img都是不能够插入东西，所以不能应用伪元素了。<br><a href="https://www.zhihu.com/question/21296044" target="_blank" rel="external">一丝老师知乎回答</a></p>
+<blockquote>
+<p>input，img，iframe等元素都不能包含其他元素，所以不能通过伪元素插入内容。至于Chrome 中checkbox和radio可以插入，那应该是Bug了</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div></pre></td><td class="code"><pre><div class="line">&lt;!DOCTYPE html&gt;</div><div class="line">&lt;html&gt;</div><div class="line"></div><div class="line">&lt;head&gt;</div><div class="line">    &lt;meta charset=&quot;utf-8&quot; /&gt;</div><div class="line">    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;</div><div class="line">    &lt;title&gt;&lt;/title&gt;</div><div class="line">    &lt;style type=&quot;text/css&quot;&gt;</div><div class="line"></div><div class="line">        .exp:after &#123;</div><div class="line">            content: &quot;after&quot;;</div><div class="line">            display: inline;</div><div class="line">            color: #a00;</div><div class="line">        &#125;</div><div class="line">    &lt;/style&gt;  </div><div class="line">&lt;/head&gt;</div><div class="line">&lt;body&gt;</div><div class="line">&lt;input type=&quot;text&quot; class=&quot;exp&quot; placeholder=&quot;text&quot;&gt;</div><div class="line">&lt;select name=&quot;&quot; id=&quot;&quot; class=&quot;exp&quot;&gt;</div><div class="line">    &lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;</div><div class="line">    &lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;</div><div class="line">    &lt;option value=&quot;3&quot;&gt;3&lt;/option&gt;</div><div class="line">&lt;/select&gt;</div><div class="line"></div><div class="line">&lt;input type=&quot;reset&quot; class=&quot;exp&quot;&gt;</div><div class="line">&lt;input type=&quot;submit&quot; class=&quot;exp&quot;&gt;</div><div class="line">&lt;input type=&quot;button&quot; class=&quot;exp&quot;&gt;</div><div class="line">&lt;button class=&quot;exp&quot;&gt;button&lt;/button&gt;</div><div class="line"></div><div class="line">&lt;input type=&quot;radio&quot; class=&quot;exp&quot;&gt;</div><div class="line">&lt;input type=&quot;checkbox&quot; class=&quot;exp&quot;&gt;</div><div class="line">&lt;img src=&quot;http://cdn2.w3cplus.com/cdn/farfuture/kjp_QAYKlGIQlwtbqga2ZA_t3kt5JqbddjbyHIMm9kU/mtime:1397811294/sites/default/files/w3cplus-weixin.jpg&quot; alt=&quot;&quot; class=&quot;exp&quot;&gt;</div><div class="line">&lt;iframe class=&quot;exp&quot; src=&quot;&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</div><div class="line"></div><div class="line">&lt;/html&gt;</div></pre></td></tr></table></figure>
+<p>效果是：<br><img src="media/14713281407997/14713361606510.jpg" alt=""></p>
+<p>radio 和 checkbox 能插入伪元素是chrome的bug，在firefox下是好着的</p>
+<h2 id="解决："><a href="#解决：" class="headerlink" title="解决："></a>解决：</h2><p><a href="http://stackoverflow.com/questions/2587669/can-i-use-the-after-pseudo-element-on-an-input-field" target="_blank" rel="external">stackoverflow</a></p>
+<p><a href="http://stackoverflow.com/questions/3532649/problem-with-select-and-after-with-css-in-webkit" target="_blank" rel="external">stackoverflow </a></p>
+<ol>
+<li>给input或select 添加一层外层的 div 包裹，然后给这个 div 使用伪元素</li>
+<li>1中的办法还不错，唯一缺陷是select的时候比如我的第一张图的三角形点击之后并不会弹出option，于是可以使用 对应的 label 来添加伪元素（label是有闭有合的标签）</li>
+<li>还有说用jquery的after方法<code>$(&quot;.mystyle&quot;).after(&quot;add your smiley here&quot;);</code>没有试过。</li>
+</ol>
+<p>附录：<br>伪类的效果可以通过添加一个实际的类来达到，而伪元素的效果则需要通过添加一个实际的元素才能达到，这也是为什么他们一个称为伪类，一个称为伪元素的原因。</p>
+<p>伪类种类<br><img src="media/14713281407997/14714339773924.jpg" alt=""></p>
+<p>伪元素种类（css3中在伪元素前使用 :: 而不是 : 来区分伪元素和伪类）<br><img src="media/14713281407997/14714339835873.jpg" alt=""></p>
+<p>参考： <a href="https://segmentfault.com/a/1190000000484493" target="_blank" rel="external">https://segmentfault.com/a/1190000000484493</a></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/15/ 预编译语言：scss、less、stylus 的简要对比/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-15T16:49:21+08:00" content="2016-08-15">
+              2016-08-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/15/ 预编译语言：scss、less、stylus 的简要对比/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/15/ 预编译语言：scss、less、stylus 的简要对比/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="预编译语言：scss、less、stylus-的简要对比"><a href="#预编译语言：scss、less、stylus-的简要对比" class="headerlink" title="预编译语言：scss、less、stylus 的简要对比"></a>预编译语言：scss、less、stylus 的简要对比</h1><p>scss 是 sass 的升级版，没用过sass就不说了</p>
+<h2 id="先说历史"><a href="#先说历史" class="headerlink" title="先说历史"></a>先说历史</h2><blockquote>
+<p>CSS 预处理器是一种语言用来为 CSS 增加一些编程的的特性，无需考虑浏览器的兼容性问题，例如你可以在 CSS 中使用变量、简单的程序逻辑、函数等等在编程语言中的一些基本技巧，可以让你的 CSS 更见简洁，适应性更强，代码更直观等诸多好处。</p>
+</blockquote>
+<h2 id="异同"><a href="#异同" class="headerlink" title="异同"></a>异同</h2><p>强烈推荐：<a href="http://efe.baidu.com/blog/revisiting-css-preprocessors/" target="_blank" rel="external">baidu efe 的一篇经典对比文章</a></p>
+<p><a href="https://gist.github.com/chriseppstein/674726" target="_blank" rel="external">github上一篇对比 scss 和 less 的文章，基本看一遍知识点都能回顾起来了</a></p>
+<blockquote>
+<p>Less 的基本语法属于「CSS 风格」，而 Scss、Stylus 相比之下激进一些，利用缩进、空格和换行来减少需要输入的字符。不过区别在于 Scss、Stylus 同时也兼容「CSS 风格」代码</p>
+</blockquote>
+<h3 id="基本写法"><a href="#基本写法" class="headerlink" title="基本写法"></a>基本写法</h3><p>Less &amp; SCSS：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">  display: block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Sass：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.box</div><div class="line">  display: block</div></pre></td></tr></table></figure>
+<p>Stylus：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.box</div><div class="line">  display: block // or 	display block</div></pre></td></tr></table></figure>
+<p>stylus的写法非常灵活，即可以不写{}括号，也可以省略：号和;号</p>
+<h3 id="嵌套，父元素-amp"><a href="#嵌套，父元素-amp" class="headerlink" title="嵌套，父元素&amp;"></a>嵌套，父元素&amp;</h3><p>三者的嵌套语法都是一致的，甚至连引用父级选择器的标记 &amp; 也相同</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>三者在声明和使用的变量的时候有较大差异</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//Less：</div><div class="line">@red: #c00;</div><div class="line"></div><div class="line">strong &#123;</div><div class="line">  color: @red;</div><div class="line">&#125;</div><div class="line">//Sass：</div><div class="line">$red: #c00;</div><div class="line"></div><div class="line">strong &#123;</div><div class="line">  color: $red;</div><div class="line">&#125;</div><div class="line">//Stylus：</div><div class="line">red = #c00</div><div class="line">strong</div><div class="line">  color: red</div></pre></td></tr></table></figure>
+<p>less 是使用 @a:b<br>scss 是使用 $a:b<br>stylus 是使用 a=b</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/13/----1/" itemprop="url">
+                  js中的url网址编码，及编码方式 ASCII、unicode 、utf-8 编码
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-13T17:46:42+08:00" content="2016-08-13">
+              2016-08-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/13/----1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/13/----1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="js中的url网址编码，及编码方式-ASCII、unicode-、utf-8-编码"><a href="#js中的url网址编码，及编码方式-ASCII、unicode-、utf-8-编码" class="headerlink" title="js中的url网址编码，及编码方式 ASCII、unicode 、utf-8 编码"></a>js中的url网址编码，及编码方式 ASCII、unicode 、utf-8 编码</h1><p>由于“为什么网址要进行 encodeUURI 和 decodeURI” 引申出了字符编码的一系列问题。</p>
+<h2 id="先回答网址为什么要进行编码"><a href="#先回答网址为什么要进行编码" class="headerlink" title="先回答网址为什么要进行编码"></a>先回答网址为什么要进行编码</h2><p>link：<a href="http://www.ruanyifeng.com/blog/2010/02/url_encoding.html" target="_blank" rel="external">ruanyifeng</a><br>基础的一些字符不需要经过编码，他们是：</p>
+<blockquote>
+<p>“…Only alphanumerics [0-9a-zA-Z], the special characters “$-<em>.+!*’(),” [not including the quotes - ed], and reserved characters used for their reserved purposes may be used unencoded within a URL.”<br>“只有字母和数字[0-9a-zA-Z]、一些特殊符号”$-</em>.+!*’(),”[不包括双引号]、以及某些保留字，才可以不经过编码直接用于URL。”</p>
+</blockquote>
+<p>因为网址的路径、？号后面的查询字符串、以及get post请求的网址中，通常都是各种国家的语言，编码方式也不同，那么我们就要将它们统一成一种编码，以方便浏览器和服务器处理</p>
+<p>自然这种处理字符编码的任务就落到了脚本语言 js 的身上了。</p>
+<p>ps:我们在浏览器的地址栏中经常能够看到中文是因为浏览器在地址栏中使用了 decodeURI ，例如我们可以在控制台看到 window.locaton.href 中特殊字符都是经过了utf-8编码的<br><img src="media/14710816026473/14710858159542.jpg" alt=""></p>
+<h3 id="js中字符编码的三个函数：escape-unescape-encodeURI-decodeURI-encodeURIComponent-decodeURIComponent"><a href="#js中字符编码的三个函数：escape-unescape-encodeURI-decodeURI-encodeURIComponent-decodeURIComponent" class="headerlink" title="js中字符编码的三个函数：escape unescape encodeURI decodeURI encodeURIComponent decodeURIComponent"></a>js中字符编码的三个函数：<code>escape unescape encodeURI decodeURI encodeURIComponent decodeURIComponent</code></h3><ol>
+<li><p>escape 是以前使用的老式写法，会把字符转化成 unicode 格式，不要使用</p>
+</li>
+<li><p>encodeURI 把字符转化为 utf-8 格式，并在每个字符前面加上 %</p>
+<blockquote>
+<p>对其他一些在网址中有特殊含义的符号”; / ? : @ &amp; = + $ , #”，encodeURI也不进行编码</p>
+</blockquote>
+</li>
+<li><p>encodeURIComponent </p>
+<blockquote>
+<p>与encodeURI()的区别是，它用于对URL的组成部分进行个别编码，而不用于对整个URL进行编码。因此，”; / ? : @ &amp; = + $ , #”，这些在encodeURI()中不被编码的符号，在encodeURIComponent()中统统会被编码。至于具体的编码方法，两者是一样。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="编码方式-ASCII、unicode-、utf-8"><a href="#编码方式-ASCII、unicode-、utf-8" class="headerlink" title="编码方式 ASCII、unicode 、utf-8"></a>编码方式 ASCII、unicode 、utf-8</h2><p>link: <a href="http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html" target="_blank" rel="external">ruanyifeng</a><br>最早美国人使用计算机就只会用到数字、大小写字母、和一些特殊的符号。所以美国制定了 ASCII 标准：用一个字节（占8个二进制位）表示一个字符，2^8=256，但是只用到了128个，所以每个字节的第一位规定是0，比如我们常见的 A 56, a 97, 0 48这些顺序就是ASCII顺序</p>
+<p>随着计算机的发展，各个国家的文字都不一样，适应ASCII可定满足不了需求，就算把 ASCII 没用到的第一位用上，总共也只能表示 256 个字符。所以就出现了 unicode（unique是唯一的意思），每个国家的每一个字符的编码是唯一的</p>
+<blockquote>
+<p>需要注意的是，Unicode只是一个符号集，它只规定了符号的二进制代码，却没有规定这个二进制代码应该如何存储。比方说我实现unicode的时候可以用三个字节来存储、也可以用四个字节来存储，具体的存储实现方式可以不同。</p>
+</blockquote>
+<p>utf-8只是 unicode 的一种具体实现方式</p>
+<blockquote>
+<p>UTF-8是Unicode的实现方式之一。<br>UTF-8最大的一个特点，就是它是一种变长的编码方式。它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/08/13/---/" itemprop="url">
                   high performence javascript(高性能JavaScript)
                 </a>
@@ -352,6 +1102,135 @@
 <blockquote>
 <p>UTF-8是Unicode的实现方式之一。<br>UTF-8最大的一个特点，就是它是一种变长的编码方式。它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度。</p>
 </blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/13/----2/" itemprop="url">
+                  hexo博客注意事项
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-13T16:45:37+08:00" content="2016-08-13">
+              2016-08-13
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/other/" itemprop="url" rel="index">
+                    <span itemprop="name">other</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/13/----2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/13/----2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="hexo博客注意事项"><a href="#hexo博客注意事项" class="headerlink" title="hexo博客注意事项"></a>hexo博客注意事项</h1><h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: high performence javascript(高性能JavaScript)</div><div class="line">tags:</div><div class="line">- 读书笔记</div><div class="line">category:</div><div class="line">- readingNote</div><div class="line">---</div></pre></td></tr></table></figure>
+<p>开头都应该有 title， tag和category随意<br>category有如下固定七个</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">html</div><div class="line">css</div><div class="line">js</div><div class="line">webOther //包括性能优化。。。</div><div class="line">readingNote</div><div class="line">other</div><div class="line">c++</div></pre></td></tr></table></figure>
+<p>摘要，防止文章太长导致首页很长</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;!--more--&gt;</div></pre></td></tr></table></figure>
+<h2 id="hexo部署"><a href="#hexo部署" class="headerlink" title="hexo部署"></a>hexo部署</h2><p>hexo g<br>hexo d</p>
+<h2 id="本地预览"><a href="#本地预览" class="headerlink" title="本地预览"></a>本地预览</h2><p>hexo server</p>
+<h2 id="其他技巧"><a href="#其他技巧" class="headerlink" title="其他技巧"></a>其他技巧</h2><p>在博客根目录下的 _config.yml中</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"># Pagination</div><div class="line">## Set per_page to 0 to disable pagination</div><div class="line">per_page: 10</div><div class="line">pagination_dir: page</div></pre></td></tr></table></figure>
+<p>可以修改每一页显示的的文章数量，是个很重要的配置项</p>
 
           
         
@@ -509,7 +1388,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/13/2016-08-13/" itemprop="url">
+                <a class="post-title-link" href="/2016/08/13/js模块-1/" itemprop="url">
                   未命名
                 </a>
               
@@ -523,7 +1402,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-13T16:08:10+08:00" content="2016-08-13">
+            <time itemprop="dateCreated" datetime="2016-08-13T16:42:52+08:00" content="2016-08-13">
               2016-08-13
             </time>
           </span>
@@ -534,8 +1413,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/13/2016-08-13/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/13/2016-08-13/" itemprop="commentsCount"></span>
+                <a href="/2016/08/13/js模块-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/13/js模块-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -560,784 +1439,14 @@
       
         
           
-            <h1 id="charpter-1-JavaScript简介"><a href="#charpter-1-JavaScript简介" class="headerlink" title="charpter 1 JavaScript简介"></a>charpter 1 JavaScript简介</h1><h2 id="js实现"><a href="#js实现" class="headerlink" title="js实现"></a>js实现</h2><p>一个完整的 JavaScript 实现应该由下列三个不同的部分组成（见图 1-1）。</p>
-<ol>
-<li>核心（ECMAScript）</li>
-<li>文档对象模型（DOM）</li>
-<li>浏览器对象模型（BOM）</li>
-</ol>
-<h3 id="ecamscript"><a href="#ecamscript" class="headerlink" title="ecamscript"></a>ecamscript</h3><p>只规定了诸如语法、类型、关键字、保留字等核心，具体的实现环境是不同的。Web 浏览器只是 ECMAScript 实现可能的宿主环境之一，此外还有服务器环境node、Adobe flash</p>
-<h3 id="文档对象模型（DOM，document-object-model）"><a href="#文档对象模型（DOM，document-object-model）" class="headerlink" title="文档对象模型（DOM，document object model）"></a>文档对象模型（DOM，document object model）</h3><p>是针对 XML 但经过扩展用于 HTML 的应用程序编程接口，HTML或 XML 页面中的每个组成部分都是某种类型的节点，这些节点又包含着不同类型的数据。使用DOM api开发者可以删除、添加、替换或修改任何节点。</p>
-<h3 id="浏览器对象模型-BOM-browser-object-model"><a href="#浏览器对象模型-BOM-browser-object-model" class="headerlink" title="浏览器对象模型(BOM, browser object model)"></a>浏览器对象模型(BOM, browser object model)</h3><p>支持可以访问和操作浏览器窗口的浏览器对象模型<br>&gt;<br>弹出新浏览器窗口的功能；<br> 移动、缩放和关闭浏览器窗口的功能；<br> 提供浏览器详细信息的 navigator 对象；<br> 提供浏览器所加载页面的详细信息的 location 对象；<br> 提供用户显示器分辨率详细信息的 screen 对象；<br> 对 cookies 的支持；<br> 像 XMLHttpRequest 和 IE 的 ActiveXObject 这样的自定义对象。</p>
-<p><img src="media/14710757133111.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/09/null 与 0/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-09T23:40:03+08:00" content="2016-08-09">
-              2016-08-09
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/09/null 与 0/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/09/null 与 0/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="null-与-0"><a href="#null-与-0" class="headerlink" title="null 与 0"></a>null 与 0</h1><h2 id="先看几个“奇怪”的例子"><a href="#先看几个“奇怪”的例子" class="headerlink" title="先看几个“奇怪”的例子"></a>先看几个“奇怪”的例子</h2><p><img src="media/14707572032289/14707573130242.jpg" alt=""></p>
-<p>我们都知道 Boolean 值中回转化为 false 的有四种：0, “”, null, undefined<br>那么数值 Number 的转化会怎样呢？<br><img src="media/14707572032289/14707576235711.jpg" alt=""></p>
-<p>可以看到 undefined 被转化为 NaN，而 Null 被转化为 0，这里可以<a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">ruanyifeng 博文</a>。总结见附录</p>
-<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>null == 0 和 null === 0 这是个特殊情况，此时 null 被当成了一个基本值，不会被转化为 Number 类型，故而返回的是 false，但是其他的运算符就会把 null 转化为数值 0，因而会有以下结果。link: <a href="http://stackoverflow.com/questions/2910495/why-null-0-null-0-but-not-null-0" target="_blank" rel="external">stackoverFlow</a><br><img src="media/14707572032289/14707580908805.jpg" alt=""></p>
-<h2 id="附录：-Null-和-Undefined"><a href="#附录：-Null-和-Undefined" class="headerlink" title="附录： Null 和 Undefined"></a>附录： Null 和 Undefined</h2><p>link:<br><a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html</a></p>
-<p>undefined和null在if语句中，都会被自动转为false，相等运算符甚至直接报告两者相等，但不全等<br>根据C语言的传统，null被设计成可以自动转为0。<br>null是一个表示”无”的对象，转为数值时为0；undefined是一个表示”无”的原始值，转为数值时为NaN<br>&gt;<br>首先，null像在Java里一样，被当成一个对象。但是，JavaScript的数据类型分成原始类型（primitive）和合成类型（complex）两大类，Brendan Eich觉得表示”无”的值最好不是对象。<br>其次，JavaScript的最初版本没有包括错误处理机制，发生数据类型不匹配时，往往是自动转换类型或者默默地失败。Brendan Eich觉得，如果null自动转为0，很不容易发现错误。<br>因此，Brendan Eich又设计了一个undefined。</p>
-<p>&gt;<br>null和undefined基本是同义的，只有一些细微的差别。<br>null表示”没有对象”，即该处不应该有值。典型用法是：<br>（1） 作为函数的参数，表示该函数的参数不是对象。<br>（2） 作为对象原型链的终点。</p>
-<p>Object.getPrototypeOf(Object.prototype)<br>// null<br>undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：<br>（1）变量被声明了，但没有赋值时，就等于undefined。<br>（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。<br>（3）对象没有赋值的属性，该属性的值为undefined。<br>（4）函数没有返回值时，默认返回undefined。</p>
-<p>var i;<br>i // undefined<br>function f(x){console.log(x)}<br>f() // undefined<br>var  o = new Object();<br>o.p // undefined<br>var x = f();<br>x // undefined</p>
-<p>来自 <a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html</a> </p>
-<p>##<br>null 表示一个值被定义了，定义为“空值”；<br>undefined 表示根本不存在定义。<br>所以设置一个值为 null 是合理的，如<br>objA.valueA = null;<br>但设置一个值为 undefined 是不合理的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">var b = false,</div><div class="line">    u = undefined,</div><div class="line">    n = null;</div><div class="line">console.log(0 == b);    //true</div><div class="line">console.log(0 === b);   //false</div><div class="line"></div><div class="line">console.log(0 == u);    //false</div><div class="line">console.log(0 === u);   //false</div><div class="line"></div><div class="line">console.log(0 == n);    //false</div><div class="line">console.log(0 === n);   //false</div><div class="line"></div><div class="line">if(undefined == 0) &#123;    //!=</div><div class="line">    console.log(&quot;==&quot;);</div><div class="line">&#125; else &#123;</div><div class="line">    console.log(&quot;!=&quot;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//null</div><div class="line">console.log(Number(null));  //0</div><div class="line">console.log(null + 5);      //5</div><div class="line"></div><div class="line">//undefined</div><div class="line">console.log(Number(undefined)); //NaN</div><div class="line">console.log(undefined + 5);     //NaN</div><div class="line"></div><div class="line">console.log(undefined == null);     //true</div><div class="line">console.log(undefined === null);    //false</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/08/flex布局&多行溢出/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-08T14:22:17+08:00" content="2016-08-08">
-              2016-08-08
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/08/flex布局&多行溢出/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/flex布局&多行溢出/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="flex布局-amp-多行溢出"><a href="#flex布局-amp-多行溢出" class="headerlink" title="flex布局&amp;多行溢出"></a>flex布局&amp;多行溢出</h1><p>2016年7月15日 星期五<br>16:33</p>
-<p>父元素使用  display: flex;<br>子元素拥有的属性：<br>flex<br>flex-direction<br>justify-content</p>
-<p>flex可以指定数值表示所占的比重<br>Flex-direction: row / column 表示排列的方向<br>Justify-content: flex-start / flex-end /center / space-between / space-around<br>    注意space-between是最两边没有间距<br>        space-around最两边有一半间距的</p>
-<p>解决webkit内核（如chrome和移动端手机）的多行文本溢出显示省略号…</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/06/typeError 和 referenceError/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-06T14:37:04+08:00" content="2016-08-06">
-              2016-08-06
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/06/typeError 和 referenceError/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/06/typeError 和 referenceError/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="typeError-和-referenceError"><a href="#typeError-和-referenceError" class="headerlink" title="typeError 和 referenceError"></a>typeError 和 referenceError</h1><h2 id="为什么会出现TypeError-和-ReferenceError"><a href="#为什么会出现TypeError-和-ReferenceError" class="headerlink" title="为什么会出现TypeError 和 ReferenceError"></a>为什么会出现TypeError 和 ReferenceError</h2><p>查看连接： <a href="https://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/" target="_blank" rel="external">https://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/</a></p>
-<p>我们在访问对象的属性的时候有两种方式，.号和[]号，左边的是 base value，右边的是 reference name。我称之为基值和引用值，当左边的基值不存在的时候就会出现 ReferenceError，<br><img src="media/14704654248170/14705843751283.jpg" alt=""></p>
-<p>上例中：<code>a.x</code> a 并没有定义，访问a.x会出现 ReferenceError</p>
-<p>TypeError 是类型转换错误，尝试着把 unll 和 undefined 当成对象来访问就会出现转型错误</p>
-<blockquote>
-<p>关于执行环境、变量对象、活动对象参考：<a href="http://programmers.stackexchange.com/questions/189967/what-is-an-activation-object-in-javascript" target="_blank" rel="external">http://programmers.stackexchange.com/questions/189967/what-is-an-activation-object-in-javascript</a></p>
-<p>执行环境：<br><img src="media/14704654248170/14705644938308.jpg" alt=""></p>
-</blockquote>
-<h2 id="变量前是否用var"><a href="#变量前是否用var" class="headerlink" title="变量前是否用var"></a>变量前是否用var</h2><p>我们都知道js中这样一句（非严格模式下）<br><code>a = 1</code> ，那么 a 会成为window的属性，没有问题。<br>但是直接访问没有定义的 <code>a</code> 会出现 <code>ReferenceError</code>，此时a并不会成为全局window的属性，也就是说其左边的基值没有定义，所以出现 ReferenceError，这就比较矛盾了（但在es5严格模式下，二者表现相同，都会报错）, 编译器在看到a赋了值时会把a追加成window的属性，但没有给a赋值时不会把a追加成window的属性。</p>
-<p><img src="media/14704654248170/14704654961647.jpg" alt=""></p>
-<h2 id="短路运算符-amp-amp-和"><a href="#短路运算符-amp-amp-和" class="headerlink" title="短路运算符 &amp;&amp; 和 ||"></a>短路运算符 &amp;&amp; 和 ||</h2><blockquote>
-<p>会转化为false的表达式有: 0, “”, unll, undefined</p>
-</blockquote>
-<p>exper1 &amp;&amp; exper2 如果expr1 能转换成false则返回expr1,否则返回expr2（注意返回的是表达式的值，而不仅仅是true或false）</p>
-<p>exper1 &amp;&amp; exper2 如果expr1 能转换成true则返回expr1,否则返回expr2</p>
-<p>利用短路操作符可以简化代码，如我们经常会遇到访问undefined的属性，这样的话会报typeError的错误，解决：<a href="http://harttle.com/2016/01/30/javascript-objects.html" target="_blank" rel="external">http://harttle.com/2016/01/30/javascript-objects.html</a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var a;		// a的值是undefined</div><div class="line">a.x;		// Uncaught TypeError: Cannot read property &apos;x&apos; of undefined(…)</div></pre></td></tr></table></figure>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var b;</div><div class="line">b &amp;&amp; b.x		// undefined</div></pre></td></tr></table></figure>
-<p>由于使用了 &amp;&amp; ，b是undefined被转化为false，就不会执行b.x了，因此不会报错了。<br>当b有值的时候，会返回b.x        <img src="media/14704654248170/14705822006638.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/08/03/future todo：/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-03T21:45:18+08:00" content="2016-08-03">
-              2016-08-03
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/03/future todo：/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/03/future todo：/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="future-todo："><a href="#future-todo：" class="headerlink" title="future todo："></a>future todo：</h1><p> 为什么要进行urlendecode/decode?</p>
-<h1 id="high"><a href="#high" class="headerlink" title="high:"></a>high:</h1><p>js高级程序设计<br>ruanyifeng、廖学峰的网站</p>
-<p>各大团队博客如：iMWeb、奇舞团、efe等</p>
-<h1 id="low："><a href="#low：" class="headerlink" title="low："></a>low：</h1><p>es6<br>react+redux</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/31/vue.js/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-31T09:31:05+08:00" content="2016-07-31">
-              2016-07-31
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/31/vue.js/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/31/vue.js/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="vue-js"><a href="#vue-js" class="headerlink" title="vue.js"></a>vue.js</h1><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><p><code>v-</code><br>v-if 条件判断<br>v-for 循环显示数组元素<br>v-bind 绑定html特性</p>
-<h3 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h3><p>v-if可以使用 <template> 来包装多个标签，template本身不出现在dom中</template></p>
-<p>与v-if类似的是v-show，只是v-show是简单的改变display属性，而且不支持加在template上</p>
-<h3 id="每个-Vue-实例都会代理其-data-对象里所有的属性："><a href="#每个-Vue-实例都会代理其-data-对象里所有的属性：" class="headerlink" title="每个 Vue 实例都会代理其 data 对象里所有的属性："></a>每个 Vue 实例都会代理其 data 对象里所有的属性：</h3><p>new Vue()出来的对象名字其实是等于data的如下图：vm等价于data<br> <img src="media/14703271462286/14703271659304.jpg" alt=""></p>
-<p><img src="media/14699286657739/14703273139103.jpg" alt=""></p>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><ol>
-<li><p>先使用 Vue.extend() 创建一个组件构造器，然后注册该组件 Vue.component(tag, constructor)，之后才可以在 html 中使用新注册的组件。<br><img src="media/14699286657739/14708995369615.jpg" alt=""></p>
-</li>
-<li><p>HTML 特性不区分大小写。名字形式为 camelCase 的 prop 用作特性时，需要转为 kebab-case（短横线隔开）。类似html中的v-if、v-for指令<br><img src="media/14699286657739/14709700866498.jpg" alt=""></p>
-</li>
-<li><p>slot 默认内容</p>
+            <h1 id="js模块"><a href="#js模块" class="headerlink" title="js模块"></a>js模块</h1><ol>
+<li>Ruanyifeng    <a href="http://www.ruanyifeng.com/blog/2012/10/javascript_module.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2012/10/javascript_module.html</a></li>
+<li>Segmentfault    <a href="https://segmentfault.com/a/1190000000733959" target="_blank" rel="external">https://segmentfault.com/a/1190000000733959</a></li>
+<li><p>Cnblog    <a href="http://www.cnblogs.com/lvdabao/p/js-modules-develop.html" target="_blank" rel="external">http://www.cnblogs.com/lvdabao/p/js-modules-develop.html</a></p>
+<p> <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#newwindow=1&amp;q=js+%E6%A8%A1%E5%9D%97" target="_blank" rel="external">https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;ie=UTF-8#newwindow=1&amp;q=js+%E6%A8%A1%E5%9D%97</a></p>
+<p> <img src="media/14710777724910/14710777834912.jpg" alt=""></p>
 </li>
 </ol>
-<p>当component模板内含有 slot 标签的时候，表示它是默认内容。<br>当html标签间没有内容时就现实 slot 中的默认内容<br><img src="media/14699286657739/14709771634675.jpg" alt=""></p>
-<p>以上显示<br>hello vue.js !<br>slot content</p>
-<p>当html标签间有内容，就会替换掉 slot 中的内容<br><img src="media/14699286657739/14709775446280.jpg" alt=""></p>
-<p>以上显示<br>hello vue.js !<br>cover the default slot<br>cover the default slot !</p>
-<h2 id="过度-amp-动画"><a href="#过度-amp-动画" class="headerlink" title="过度 &amp; 动画"></a>过度 &amp; 动画</h2><p><img src="media/14699286657739/14709702459544.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/30/gulp 使用/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-30T15:12:14+08:00" content="2016-07-30">
-              2016-07-30
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/30/gulp 使用/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/30/gulp 使用/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="gulp-使用"><a href="#gulp-使用" class="headerlink" title="gulp 使用"></a>gulp 使用</h1><p>gulp的启动文件是<code>gulpfile.js</code>，gulp只有四个函数</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">src() 将文件拿来用来后续的处理</div><div class="line">dest() 将文件输出到指定的目录</div><div class="line">task() 生成任务</div><div class="line">watch() 监听目录或文件</div></pre></td></tr></table></figure>
-<h2 id="src-globs-options"><a href="#src-globs-options" class="headerlink" title="src(globs[, options])"></a>src(globs[, options])</h2><p>globs是匹配模式，可以是目录、文件的路径或者是数组<br>options是读取文件是的参数，一般不用</p>
-<h2 id="dest-path-options"><a href="#dest-path-options" class="headerlink" title="dest(path[, options])"></a>dest(path[, options])</h2><p>输出目录不存在则会自动创建，第二个参数cwd可以指定输出目录的基目录（默认是当前目录），mode可以指定文件权限</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">gulp.dest(&apos;build&apos;, &#123;</div><div class="line">  cwd: &apos;./app&apos;,</div><div class="line">  mode: &apos;0644&apos;</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-<h2 id="task-name-deps-fn"><a href="#task-name-deps-fn" class="headerlink" title="task(name, [,deps], fn)"></a>task(name, [,deps], fn)</h2><p>name：任务名<br>deps数组：deps数组中的任务会先于当前任务执行<br>fn：该函数定义任务所要执行的一些操作。通常来说，它会是这种形式：<code>gulp.src().pipe(someplugin())</code></p>
-<p>如果一个任务的名字为default，就表明它是“默认任务”，在命令行直接输入gulp命令，就会运行该任务。</p>
-<h2 id="gulp-watch-glob-opts-tasks"><a href="#gulp-watch-glob-opts-tasks" class="headerlink" title="gulp.watch(glob[, opts], tasks)"></a>gulp.watch(glob[, opts], tasks)</h2><p>watch方法用于指定需要监视的文件。一旦这些文件发生变动，就运行指定任务。<br>另一种写法是watch方法所监控的文件发生变化时（修改、增加、删除文件），会触发change事件。可以对change事件指定回调函数。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">var watcher = gulp.watch(&apos;templates/*.tmpl.html&apos;, [&apos;build&apos;]);</div><div class="line"></div><div class="line">watcher.on(&apos;change&apos;, function (event) &#123;</div><div class="line">   console.log(&apos;Event type: &apos; + event.type);</div><div class="line">   console.log(&apos;Event path: &apos; + event.path);</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p><a href="http://javascript.ruanyifeng.com/tool/gulp.html" target="_blank" rel="external">ruanyifen</a><br><a href="http://www.gulpjs.com.cn/docs/api/" target="_blank" rel="external">gulp中文网</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/07/28/jqeury/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-28T16:47:25+08:00" content="2016-07-28">
-              2016-07-28
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/28/jqeury/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/28/jqeury/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="jqeury"><a href="#jqeury" class="headerlink" title="jqeury"></a>jqeury</h1><h2 id="each函数的使用"><a href="#each函数的使用" class="headerlink" title="each函数的使用"></a>each函数的使用</h2><p>each(index, item)可以用来遍历数组<br>但是它是一个函数，所以不能使用continue/break来跳出循环，只是它的作用类似于for循环（我们都知道：for中用continue跳过此次循环后继续执行，break用于完全跳出循环）。<br>在each函数中可以使用<code>return true</code> 来代替continue，用 <code>return false</code> 代替 break</p>
 
           
         
@@ -1370,7 +1479,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1411,7 +1520,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">30</span>
+              <span class="site-state-item-count">54</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -1419,7 +1528,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
