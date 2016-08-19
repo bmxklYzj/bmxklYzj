@@ -270,7 +270,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/25/charpter 3 基本概念-2/" itemprop="url">
+                <a class="post-title-link" href="/2016/07/25/charpter 3 基本概念-1/" itemprop="url">
                   未命名
                 </a>
               
@@ -295,8 +295,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/25/charpter 3 基本概念-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/25/charpter 3 基本概念-2/" itemprop="commentsCount"></span>
+                <a href="/2016/07/25/charpter 3 基本概念-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/25/charpter 3 基本概念-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -459,7 +459,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/24/charpter 1 JavaScript简介-2/" itemprop="url">
+                <a class="post-title-link" href="/2016/07/24/charpter 1 JavaScript简介-1/" itemprop="url">
                   未命名
                 </a>
               
@@ -484,8 +484,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/24/charpter 1 JavaScript简介-2/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 1 JavaScript简介-2/" itemprop="commentsCount"></span>
+                <a href="/2016/07/24/charpter 1 JavaScript简介-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 1 JavaScript简介-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -569,7 +569,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/24/charpter 1 JavaScript简介-1/" itemprop="url">
+                <a class="post-title-link" href="/2016/07/24/charpter 1 JavaScript简介-2/" itemprop="url">
                   未命名
                 </a>
               
@@ -594,8 +594,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/24/charpter 1 JavaScript简介-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 1 JavaScript简介-1/" itemprop="commentsCount"></span>
+                <a href="/2016/07/24/charpter 1 JavaScript简介-2/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 1 JavaScript简介-2/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -789,116 +789,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/24/charpter 2 在 HTML 中使用 JavaScript-1/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-24T18:12:15+08:00" content="2016-07-24">
-              2016-07-24
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/07/24/charpter 2 在 HTML 中使用 JavaScript-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 2 在 HTML 中使用 JavaScript-1/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="charpter-2-在-HTML-中使用-JavaScript"><a href="#charpter-2-在-HTML-中使用-JavaScript" class="headerlink" title="charpter 2 在 HTML 中使用 JavaScript"></a>charpter 2 在 HTML 中使用 JavaScript</h1><h2 id="script-标签"><a href="#script-标签" class="headerlink" title="script 标签"></a>script 标签</h2><ol>
-<li><p>async：可选。表示应该立即下载脚本，但不应妨碍页面中的其他操作，比如下载其他资源或等待加载其他脚本。只对外部脚本文件有效。<br>async 只适用于外部脚本文件，并告诉浏览器立即下载文件。但与 defer不同的是，标记为 async 的脚本并不保证按照指定它们的先后顺序执行。<br><strong>指定 async 属性的目的是不让页面等待两个脚本下载和执行，从而异步加载页面其他内容。为此，建议异步脚本不要在加载期间修改 DOM。</strong></p>
-</li>
-<li><p>defer：可选。表示脚本可以延迟到文档完全被解析和显示之后再执行。只对外部脚本文件有效。IE7 及更早版本对嵌入脚本也支持这个属性。HTML5 规范要求脚本按照它们出现的先后顺序执行，各浏览器实现的时候不一定按顺序执行。<br><strong>脚本会被延迟到整个页面都解析完毕后再运行。相当于告诉浏览器立即下载，但延迟执行。</strong></p>
-</li>
-</ol>
-<p>无论如何包含代码，只要不存在 defer 和 async 属性，浏览器都会按照<code>&lt;script&gt;</code>元素在页面中出现的先后顺序对它们依次进行解析。换句话说，在第一个<code>&lt;script&gt;</code>元素包含的代码解析完成后，第二个<code>&lt;script&gt;</code>包含的代码才会被解析，然后才是第三个、第四个……</p>
-<p>不要把script标签放在头部，应该放在<code>&lt;/body&gt;</code>前面，因为script标签一旦出现便会阻塞页面的渲染，导致页面出现白屏。而放在底部则不会阻塞页面的渲染。用户也会因为浏览器窗口显示空白页面的时间缩短而感到打开页面的速度加快了。</p>
-<p>在包含外部 JavaScript 文件时，必须将 src 属性设置为指向相应文件的 URL。<strong>而这个文件既可以是与包含它的页面位于同一个服务器上的文件，也可以是其他任何域中的文件。和image类似，可以跨域</strong></p>
-<p> 使用 defer 属性可以让脚本在文档完全呈现之后再执行。延迟脚本总是按照指定它们的顺序执行。<br> 使用 async 属性可以表示当前脚本不必等待其他脚本，也不必阻塞文档呈现。不能保证异步脚本按照它们在页面中出现的顺序执行。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/07/24/charpter 2 在 HTML 中使用 JavaScript/" itemprop="url">
                   未命名
                 </a>
@@ -1036,6 +926,116 @@
                 &nbsp; | &nbsp;
                 <a href="/2016/07/24/charpter 2 在 HTML 中使用 JavaScript-2/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 2 在 HTML 中使用 JavaScript-2/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="charpter-2-在-HTML-中使用-JavaScript"><a href="#charpter-2-在-HTML-中使用-JavaScript" class="headerlink" title="charpter 2 在 HTML 中使用 JavaScript"></a>charpter 2 在 HTML 中使用 JavaScript</h1><h2 id="script-标签"><a href="#script-标签" class="headerlink" title="script 标签"></a>script 标签</h2><ol>
+<li><p>async：可选。表示应该立即下载脚本，但不应妨碍页面中的其他操作，比如下载其他资源或等待加载其他脚本。只对外部脚本文件有效。<br>async 只适用于外部脚本文件，并告诉浏览器立即下载文件。但与 defer不同的是，标记为 async 的脚本并不保证按照指定它们的先后顺序执行。<br><strong>指定 async 属性的目的是不让页面等待两个脚本下载和执行，从而异步加载页面其他内容。为此，建议异步脚本不要在加载期间修改 DOM。</strong></p>
+</li>
+<li><p>defer：可选。表示脚本可以延迟到文档完全被解析和显示之后再执行。只对外部脚本文件有效。IE7 及更早版本对嵌入脚本也支持这个属性。HTML5 规范要求脚本按照它们出现的先后顺序执行，各浏览器实现的时候不一定按顺序执行。<br><strong>脚本会被延迟到整个页面都解析完毕后再运行。相当于告诉浏览器立即下载，但延迟执行。</strong></p>
+</li>
+</ol>
+<p>无论如何包含代码，只要不存在 defer 和 async 属性，浏览器都会按照<code>&lt;script&gt;</code>元素在页面中出现的先后顺序对它们依次进行解析。换句话说，在第一个<code>&lt;script&gt;</code>元素包含的代码解析完成后，第二个<code>&lt;script&gt;</code>包含的代码才会被解析，然后才是第三个、第四个……</p>
+<p>不要把script标签放在头部，应该放在<code>&lt;/body&gt;</code>前面，因为script标签一旦出现便会阻塞页面的渲染，导致页面出现白屏。而放在底部则不会阻塞页面的渲染。用户也会因为浏览器窗口显示空白页面的时间缩短而感到打开页面的速度加快了。</p>
+<p>在包含外部 JavaScript 文件时，必须将 src 属性设置为指向相应文件的 URL。<strong>而这个文件既可以是与包含它的页面位于同一个服务器上的文件，也可以是其他任何域中的文件。和image类似，可以跨域</strong></p>
+<p> 使用 defer 属性可以让脚本在文档完全呈现之后再执行。延迟脚本总是按照指定它们的顺序执行。<br> 使用 async 属性可以表示当前脚本不必等待其他脚本，也不必阻塞文档呈现。不能保证异步脚本按照它们在页面中出现的顺序执行。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/07/24/charpter 2 在 HTML 中使用 JavaScript-1/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-24T18:12:15+08:00" content="2016-07-24">
+              2016-07-24
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/24/charpter 2 在 HTML 中使用 JavaScript-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/24/charpter 2 在 HTML 中使用 JavaScript-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -1321,7 +1321,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/07/23/input type的多种类型-1/" itemprop="url">
+                <a class="post-title-link" href="/2016/07/23/input type的多种类型/" itemprop="url">
                   未命名
                 </a>
               
@@ -1346,8 +1346,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/23/input type的多种类型-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/23/input type的多种类型-1/" itemprop="commentsCount"></span>
+                <a href="/2016/07/23/input type的多种类型/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/23/input type的多种类型/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
