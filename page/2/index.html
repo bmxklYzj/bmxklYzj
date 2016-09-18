@@ -380,118 +380,6 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/09/null 与 0-1/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-08-09T23:40:03+08:00" content="2016-08-09">
-              2016-08-09
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/08/09/null 与 0-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/09/null 与 0-1/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="null-与-0"><a href="#null-与-0" class="headerlink" title="null 与 0"></a>null 与 0</h1><h2 id="先看几个“奇怪”的例子"><a href="#先看几个“奇怪”的例子" class="headerlink" title="先看几个“奇怪”的例子"></a>先看几个“奇怪”的例子</h2><p><img src="media/14707572032289/14707573130242.jpg" alt=""></p>
-<p>我们都知道 Boolean 值中回转化为 false 的有四种：0, “”, null, undefined<br>那么数值 Number 的转化会怎样呢？<br><img src="media/14707572032289/14707576235711.jpg" alt=""></p>
-<p>可以看到 undefined 被转化为 NaN，而 Null 被转化为 0，这里可以<a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">ruanyifeng 博文</a>。总结见附录</p>
-<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>null == 0 和 null === 0 这是个特殊情况，此时 null 被当成了一个基本值，不会被转化为 Number 类型，故而返回的是 false，但是其他的运算符就会把 null 转化为数值 0，因而会有以下结果。link: <a href="http://stackoverflow.com/questions/2910495/why-null-0-null-0-but-not-null-0" target="_blank" rel="external">stackoverFlow</a><br><img src="media/14707572032289/14707580908805.jpg" alt=""></p>
-<h2 id="附录：-Null-和-Undefined"><a href="#附录：-Null-和-Undefined" class="headerlink" title="附录： Null 和 Undefined"></a>附录： Null 和 Undefined</h2><p>link:<br><a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html</a></p>
-<p>undefined和null在if语句中，都会被自动转为false，相等运算符甚至直接报告两者相等，但不全等<br>根据C语言的传统，null被设计成可以自动转为0。<br>null是一个表示”无”的对象，转为数值时为0；undefined是一个表示”无”的原始值，转为数值时为NaN<br>&gt;<br>首先，null像在Java里一样，被当成一个对象。但是，JavaScript的数据类型分成原始类型（primitive）和合成类型（complex）两大类，Brendan Eich觉得表示”无”的值最好不是对象。<br>其次，JavaScript的最初版本没有包括错误处理机制，发生数据类型不匹配时，往往是自动转换类型或者默默地失败。Brendan Eich觉得，如果null自动转为0，很不容易发现错误。<br>因此，Brendan Eich又设计了一个undefined。</p>
-<p>&gt;<br>null和undefined基本是同义的，只有一些细微的差别。<br>null表示”没有对象”，即该处不应该有值。典型用法是：<br>（1） 作为函数的参数，表示该函数的参数不是对象。<br>（2） 作为对象原型链的终点。</p>
-<p>Object.getPrototypeOf(Object.prototype)<br>// null<br>undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：<br>（1）变量被声明了，但没有赋值时，就等于undefined。<br>（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。<br>（3）对象没有赋值的属性，该属性的值为undefined。<br>（4）函数没有返回值时，默认返回undefined。</p>
-<p>var i;<br>i // undefined<br>function f(x){console.log(x)}<br>f() // undefined<br>var  o = new Object();<br>o.p // undefined<br>var x = f();<br>x // undefined</p>
-<p>来自 <a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html</a> </p>
-<p>##<br>null 表示一个值被定义了，定义为“空值”；<br>undefined 表示根本不存在定义。<br>所以设置一个值为 null 是合理的，如<br>objA.valueA = null;<br>但设置一个值为 undefined 是不合理的</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">var b = false,</div><div class="line">    u = undefined,</div><div class="line">    n = null;</div><div class="line">console.log(0 == b);    //true</div><div class="line">console.log(0 === b);   //false</div><div class="line"></div><div class="line">console.log(0 == u);    //false</div><div class="line">console.log(0 === u);   //false</div><div class="line"></div><div class="line">console.log(0 == n);    //false</div><div class="line">console.log(0 === n);   //false</div><div class="line"></div><div class="line">if(undefined == 0) &#123;    //!=</div><div class="line">    console.log(&quot;==&quot;);</div><div class="line">&#125; else &#123;</div><div class="line">    console.log(&quot;!=&quot;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//null</div><div class="line">console.log(Number(null));  //0</div><div class="line">console.log(null + 5);      //5</div><div class="line"></div><div class="line">//undefined</div><div class="line">console.log(Number(undefined)); //NaN</div><div class="line">console.log(undefined + 5);     //NaN</div><div class="line"></div><div class="line">console.log(undefined == null);     //true</div><div class="line">console.log(undefined === null);    //false</div></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
                 <a class="post-title-link" href="/2016/08/09/null 与 0/" itemprop="url">
                   未命名
                 </a>
@@ -604,7 +492,119 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/08/flex布局&多行溢出-1/" itemprop="url">
+                <a class="post-title-link" href="/2016/08/09/null 与 0-1/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-08-09T23:40:03+08:00" content="2016-08-09">
+              2016-08-09
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/09/null 与 0-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/09/null 与 0-1/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="null-与-0"><a href="#null-与-0" class="headerlink" title="null 与 0"></a>null 与 0</h1><h2 id="先看几个“奇怪”的例子"><a href="#先看几个“奇怪”的例子" class="headerlink" title="先看几个“奇怪”的例子"></a>先看几个“奇怪”的例子</h2><p><img src="media/14707572032289/14707573130242.jpg" alt=""></p>
+<p>我们都知道 Boolean 值中回转化为 false 的有四种：0, “”, null, undefined<br>那么数值 Number 的转化会怎样呢？<br><img src="media/14707572032289/14707576235711.jpg" alt=""></p>
+<p>可以看到 undefined 被转化为 NaN，而 Null 被转化为 0，这里可以<a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">ruanyifeng 博文</a>。总结见附录</p>
+<h2 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h2><p>null == 0 和 null === 0 这是个特殊情况，此时 null 被当成了一个基本值，不会被转化为 Number 类型，故而返回的是 false，但是其他的运算符就会把 null 转化为数值 0，因而会有以下结果。link: <a href="http://stackoverflow.com/questions/2910495/why-null-0-null-0-but-not-null-0" target="_blank" rel="external">stackoverFlow</a><br><img src="media/14707572032289/14707580908805.jpg" alt=""></p>
+<h2 id="附录：-Null-和-Undefined"><a href="#附录：-Null-和-Undefined" class="headerlink" title="附录： Null 和 Undefined"></a>附录： Null 和 Undefined</h2><p>link:<br><a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html</a></p>
+<p>undefined和null在if语句中，都会被自动转为false，相等运算符甚至直接报告两者相等，但不全等<br>根据C语言的传统，null被设计成可以自动转为0。<br>null是一个表示”无”的对象，转为数值时为0；undefined是一个表示”无”的原始值，转为数值时为NaN<br>&gt;<br>首先，null像在Java里一样，被当成一个对象。但是，JavaScript的数据类型分成原始类型（primitive）和合成类型（complex）两大类，Brendan Eich觉得表示”无”的值最好不是对象。<br>其次，JavaScript的最初版本没有包括错误处理机制，发生数据类型不匹配时，往往是自动转换类型或者默默地失败。Brendan Eich觉得，如果null自动转为0，很不容易发现错误。<br>因此，Brendan Eich又设计了一个undefined。</p>
+<p>&gt;<br>null和undefined基本是同义的，只有一些细微的差别。<br>null表示”没有对象”，即该处不应该有值。典型用法是：<br>（1） 作为函数的参数，表示该函数的参数不是对象。<br>（2） 作为对象原型链的终点。</p>
+<p>Object.getPrototypeOf(Object.prototype)<br>// null<br>undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：<br>（1）变量被声明了，但没有赋值时，就等于undefined。<br>（2) 调用函数时，应该提供的参数没有提供，该参数等于undefined。<br>（3）对象没有赋值的属性，该属性的值为undefined。<br>（4）函数没有返回值时，默认返回undefined。</p>
+<p>var i;<br>i // undefined<br>function f(x){console.log(x)}<br>f() // undefined<br>var  o = new Object();<br>o.p // undefined<br>var x = f();<br>x // undefined</p>
+<p>来自 <a href="http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html" target="_blank" rel="external">http://www.ruanyifeng.com/blog/2014/03/undefined-vs-null.html</a> </p>
+<p>##<br>null 表示一个值被定义了，定义为“空值”；<br>undefined 表示根本不存在定义。<br>所以设置一个值为 null 是合理的，如<br>objA.valueA = null;<br>但设置一个值为 undefined 是不合理的</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">var b = false,</div><div class="line">    u = undefined,</div><div class="line">    n = null;</div><div class="line">console.log(0 == b);    //true</div><div class="line">console.log(0 === b);   //false</div><div class="line"></div><div class="line">console.log(0 == u);    //false</div><div class="line">console.log(0 === u);   //false</div><div class="line"></div><div class="line">console.log(0 == n);    //false</div><div class="line">console.log(0 === n);   //false</div><div class="line"></div><div class="line">if(undefined == 0) &#123;    //!=</div><div class="line">    console.log(&quot;==&quot;);</div><div class="line">&#125; else &#123;</div><div class="line">    console.log(&quot;!=&quot;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">//null</div><div class="line">console.log(Number(null));  //0</div><div class="line">console.log(null + 5);      //5</div><div class="line"></div><div class="line">//undefined</div><div class="line">console.log(Number(undefined)); //NaN</div><div class="line">console.log(undefined + 5);     //NaN</div><div class="line"></div><div class="line">console.log(undefined == null);     //true</div><div class="line">console.log(undefined === null);    //false</div></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/08/08/flex布局&多行溢出/" itemprop="url">
                   未命名
                 </a>
               
@@ -629,8 +629,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/08/flex布局&多行溢出-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/flex布局&多行溢出-1/" itemprop="commentsCount"></span>
+                <a href="/2016/08/08/flex布局&多行溢出/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/flex布局&多行溢出/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -709,7 +709,7 @@
             
               
                 
-                <a class="post-title-link" href="/2016/08/08/flex布局&多行溢出/" itemprop="url">
+                <a class="post-title-link" href="/2016/08/08/flex布局&多行溢出-1/" itemprop="url">
                   未命名
                 </a>
               
@@ -734,8 +734,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/08/08/flex布局&多行溢出/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/flex布局&多行溢出/" itemprop="commentsCount"></span>
+                <a href="/2016/08/08/flex布局&多行溢出-1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/08/08/flex布局&多行溢出-1/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
