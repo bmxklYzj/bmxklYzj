@@ -384,7 +384,7 @@
             
               
                 
-                <a class="post-title-link" href="/1970/01/01/flex布局&多行溢出/" itemprop="url">
+                <a class="post-title-link" href="/1970/01/01/zepto/" itemprop="url">
                   未命名
                 </a>
               
@@ -409,8 +409,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/1970/01/01/flex布局&多行溢出/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/flex布局&多行溢出/" itemprop="commentsCount"></span>
+                <a href="/1970/01/01/zepto/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/zepto/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -435,11 +435,7 @@
       
         
           
-            <h1 id="flex布局-amp-多行溢出"><a href="#flex布局-amp-多行溢出" class="headerlink" title="flex布局&amp;多行溢出"></a>flex布局&amp;多行溢出</h1><p>2016年7月15日 星期五<br>16:33</p>
-<p>父元素使用  display: flex;<br>子元素拥有的属性：<br>flex<br>flex-direction<br>justify-content</p>
-<p>flex可以指定数值表示所占的比重<br>Flex-direction: row / column 表示排列的方向<br>Justify-content: flex-start / flex-end /center / space-between / space-around<br>    注意space-between是最两边没有间距<br>        space-around最两边有一半间距的</p>
-<p>解决webkit内核（如chrome和移动端手机）的多行文本溢出显示省略号…</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">overflow : hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;</div></pre></td></tr></table></figure>
+            <h1 id="zepto"><a href="#zepto" class="headerlink" title="zepto"></a>zepto</h1><h3 id="zepto-children-方法返回的是直接子元素，是一个html集合"><a href="#zepto-children-方法返回的是直接子元素，是一个html集合" class="headerlink" title="zepto children()方法返回的是直接子元素，是一个html集合"></a>zepto children()方法返回的是直接子元素，是一个html集合</h3><p>parent()返回直接父元素，parents()返回所有父元素，parents()可以加参数过滤父元素</p>
 
           
         
@@ -601,7 +597,7 @@
             
               
                 
-                <a class="post-title-link" href="/1970/01/01/ 预编译语言：scss、less、stylus 的简要对比/" itemprop="url">
+                <a class="post-title-link" href="/1970/01/01/typeError 和 referenceError/" itemprop="url">
                   未命名
                 </a>
               
@@ -626,8 +622,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/1970/01/01/ 预编译语言：scss、less、stylus 的简要对比/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/ 预编译语言：scss、less、stylus 的简要对比/" itemprop="commentsCount"></span>
+                <a href="/1970/01/01/typeError 和 referenceError/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/typeError 和 referenceError/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -652,26 +648,25 @@
       
         
           
-            <h1 id="预编译语言：scss、less、stylus-的简要对比"><a href="#预编译语言：scss、less、stylus-的简要对比" class="headerlink" title="预编译语言：scss、less、stylus 的简要对比"></a>预编译语言：scss、less、stylus 的简要对比</h1><p>scss 是 sass 的升级版，没用过sass就不说了</p>
-<h2 id="先说历史"><a href="#先说历史" class="headerlink" title="先说历史"></a>先说历史</h2><blockquote>
-<p>CSS 预处理器是一种语言用来为 CSS 增加一些编程的的特性，无需考虑浏览器的兼容性问题，例如你可以在 CSS 中使用变量、简单的程序逻辑、函数等等在编程语言中的一些基本技巧，可以让你的 CSS 更见简洁，适应性更强，代码更直观等诸多好处。</p>
-</blockquote>
-<h2 id="异同"><a href="#异同" class="headerlink" title="异同"></a>异同</h2><p>强烈推荐：<a href="http://efe.baidu.com/blog/revisiting-css-preprocessors/" target="_blank" rel="external">baidu efe 的一篇经典对比文章</a></p>
-<p><a href="https://gist.github.com/chriseppstein/674726" target="_blank" rel="external">github上一篇对比 scss 和 less 的文章，基本看一遍知识点都能回顾起来了</a></p>
+            <h1 id="typeError-和-referenceError"><a href="#typeError-和-referenceError" class="headerlink" title="typeError 和 referenceError"></a>typeError 和 referenceError</h1><h2 id="为什么会出现TypeError-和-ReferenceError"><a href="#为什么会出现TypeError-和-ReferenceError" class="headerlink" title="为什么会出现TypeError 和 ReferenceError"></a>为什么会出现TypeError 和 ReferenceError</h2><p>查看连接： <a href="https://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/" target="_blank" rel="external">https://javascriptweblog.wordpress.com/2010/08/16/understanding-undefined-and-preventing-referenceerrors/</a></p>
+<p>我们在访问对象的属性的时候有两种方式，.号和[]号，左边的是 base value，右边的是 reference name。我称之为基值和引用值，当左边的基值不存在的时候就会出现 ReferenceError，<br><img src="media/14704654248170/14705843751283.jpg" alt=""></p>
+<p>上例中：<code>a.x</code> a 并没有定义，访问a.x会出现 ReferenceError</p>
+<p>TypeError 是类型转换错误，尝试着把 unll 和 undefined 当成对象来访问就会出现转型错误</p>
 <blockquote>
-<p>Less 的基本语法属于「CSS 风格」，而 Scss、Stylus 相比之下激进一些，利用缩进、空格和换行来减少需要输入的字符。不过区别在于 Scss、Stylus 同时也兼容「CSS 风格」代码</p>
+<p>关于执行环境、变量对象、活动对象参考：<a href="http://programmers.stackexchange.com/questions/189967/what-is-an-activation-object-in-javascript" target="_blank" rel="external">http://programmers.stackexchange.com/questions/189967/what-is-an-activation-object-in-javascript</a></p>
+<p>执行环境：<br><img src="media/14704654248170/14705644938308.jpg" alt=""></p>
 </blockquote>
-<h3 id="基本写法"><a href="#基本写法" class="headerlink" title="基本写法"></a>基本写法</h3><p>Less &amp; SCSS：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">  display: block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>Sass：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.box</div><div class="line">  display: block</div></pre></td></tr></table></figure>
-<p>Stylus：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.box</div><div class="line">  display: block // or 	display block</div></pre></td></tr></table></figure>
-<p>stylus的写法非常灵活，即可以不写{}括号，也可以省略：号和;号</p>
-<h3 id="嵌套，父元素-amp"><a href="#嵌套，父元素-amp" class="headerlink" title="嵌套，父元素&amp;"></a>嵌套，父元素&amp;</h3><p>三者的嵌套语法都是一致的，甚至连引用父级选择器的标记 &amp; 也相同</p>
-<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>三者在声明和使用的变量的时候有较大差异</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//Less：</div><div class="line">@red: #c00;</div><div class="line"></div><div class="line">strong &#123;</div><div class="line">  color: @red;</div><div class="line">&#125;</div><div class="line">//Sass：</div><div class="line">$red: #c00;</div><div class="line"></div><div class="line">strong &#123;</div><div class="line">  color: $red;</div><div class="line">&#125;</div><div class="line">//Stylus：</div><div class="line">red = #c00</div><div class="line">strong</div><div class="line">  color: red</div></pre></td></tr></table></figure>
-<p>less 是使用 @a:b<br>scss 是使用 $a:b<br>stylus 是使用 a=b</p>
+<h2 id="变量前是否用var"><a href="#变量前是否用var" class="headerlink" title="变量前是否用var"></a>变量前是否用var</h2><p>我们都知道js中这样一句（非严格模式下）<br><code>a = 1</code> ，那么 a 会成为window的属性，没有问题。<br>但是直接访问没有定义的 <code>a</code> 会出现 <code>ReferenceError</code>，此时a并不会成为全局window的属性，也就是说其左边的基值没有定义，所以出现 ReferenceError，这就比较矛盾了（但在es5严格模式下，二者表现相同，都会报错）, 编译器在看到a赋了值时会把a追加成window的属性，但没有给a赋值时不会把a追加成window的属性。</p>
+<p><img src="media/14704654248170/14704654961647.jpg" alt=""></p>
+<h2 id="短路运算符-amp-amp-和"><a href="#短路运算符-amp-amp-和" class="headerlink" title="短路运算符 &amp;&amp; 和 ||"></a>短路运算符 &amp;&amp; 和 ||</h2><blockquote>
+<p>会转化为false的表达式有: 0, “”, unll, undefined</p>
+</blockquote>
+<p>exper1 &amp;&amp; exper2 如果expr1 能转换成false则返回expr1,否则返回expr2（注意返回的是表达式的值，而不仅仅是true或false）</p>
+<p>exper1 &amp;&amp; exper2 如果expr1 能转换成true则返回expr1,否则返回expr2</p>
+<p>利用短路操作符可以简化代码，如我们经常会遇到访问undefined的属性，这样的话会报typeError的错误，解决：<a href="http://harttle.com/2016/01/30/javascript-objects.html" target="_blank" rel="external">http://harttle.com/2016/01/30/javascript-objects.html</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var a;		// a的值是undefined</div><div class="line">a.x;		// Uncaught TypeError: Cannot read property &apos;x&apos; of undefined(…)</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">var b;</div><div class="line">b &amp;&amp; b.x		// undefined</div></pre></td></tr></table></figure>
+<p>由于使用了 &amp;&amp; ，b是undefined被转化为false，就不会执行b.x了，因此不会报错了。<br>当b有值的时候，会返回b.x        <img src="media/14704654248170/14705822006638.jpg" alt=""></p>
 
           
         
@@ -803,124 +798,6 @@
 <blockquote>
 <p>UTF-8是Unicode的实现方式之一。<br>UTF-8最大的一个特点，就是它是一种变长的编码方式。它可以使用1~4个字节表示一个符号，根据不同的符号而变化字节长度。</p>
 </blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/1970/01/01/vue.js/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="1970-01-01T08:00:00+08:00" content="1970-01-01">
-              1970-01-01
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/1970/01/01/vue.js/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/vue.js/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="vue-js"><a href="#vue-js" class="headerlink" title="vue.js"></a>vue.js</h1><h2 id="指令"><a href="#指令" class="headerlink" title="指令"></a>指令</h2><p><code>v-</code><br>v-if 条件判断<br>v-for 循环显示数组元素<br>v-bind 绑定html特性</p>
-<h3 id="v-if"><a href="#v-if" class="headerlink" title="v-if"></a>v-if</h3><p>v-if可以使用 <template> 来包装多个标签，template本身不出现在dom中</template></p>
-<p>与v-if类似的是v-show，只是v-show是简单的改变display属性，而且不支持加在template上</p>
-<h3 id="每个-Vue-实例都会代理其-data-对象里所有的属性："><a href="#每个-Vue-实例都会代理其-data-对象里所有的属性：" class="headerlink" title="每个 Vue 实例都会代理其 data 对象里所有的属性："></a>每个 Vue 实例都会代理其 data 对象里所有的属性：</h3><p>new Vue()出来的对象名字其实是等于data的如下图：vm等价于data<br> <img src="media/14703271462286/14703271659304.jpg" alt=""></p>
-<p><img src="media/14699286657739/14703273139103.jpg" alt=""></p>
-<h2 id="组件"><a href="#组件" class="headerlink" title="组件"></a>组件</h2><ol>
-<li><p>先使用 Vue.extend() 创建一个组件构造器，然后注册该组件 Vue.component(tag, constructor)，之后才可以在 html 中使用新注册的组件。<br><img src="media/14699286657739/14708995369615.jpg" alt=""></p>
-</li>
-<li><p>HTML 特性不区分大小写。名字形式为 camelCase 的 prop 用作特性时，需要转为 kebab-case（短横线隔开）。类似html中的v-if、v-for指令<br><img src="media/14699286657739/14709700866498.jpg" alt=""></p>
-</li>
-<li><p>slot 默认内容</p>
-</li>
-</ol>
-<p>当component模板内含有 slot 标签的时候，表示它是默认内容。<br>当html标签间没有内容时就现实 slot 中的默认内容<br><img src="media/14699286657739/14709771634675.jpg" alt=""></p>
-<p>以上显示<br>hello vue.js !<br>slot content</p>
-<p>当html标签间有内容，就会替换掉 slot 中的内容<br><img src="media/14699286657739/14709775446280.jpg" alt=""></p>
-<p>以上显示<br>hello vue.js !<br>cover the default slot<br>cover the default slot !</p>
-<h2 id="过度-amp-动画"><a href="#过度-amp-动画" class="headerlink" title="过度 &amp; 动画"></a>过度 &amp; 动画</h2><p><img src="media/14699286657739/14709702459544.jpg" alt=""></p>
 
           
         
@@ -1202,7 +1079,7 @@
             
               
                 
-                <a class="post-title-link" href="/1970/01/01/-1/" itemprop="url">
+                <a class="post-title-link" href="/1970/01/01/ 预编译语言：scss、less、stylus 的简要对比/" itemprop="url">
                   未命名
                 </a>
               
@@ -1227,8 +1104,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/1970/01/01/-1/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/-1/" itemprop="commentsCount"></span>
+                <a href="/1970/01/01/ 预编译语言：scss、less、stylus 的简要对比/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/ 预编译语言：scss、less、stylus 的简要对比/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -1253,7 +1130,27 @@
       
         
           
-            
+            <h1 id="预编译语言：scss、less、stylus-的简要对比"><a href="#预编译语言：scss、less、stylus-的简要对比" class="headerlink" title="预编译语言：scss、less、stylus 的简要对比"></a>预编译语言：scss、less、stylus 的简要对比</h1><p>scss 是 sass 的升级版，没用过sass就不说了</p>
+<h2 id="先说历史"><a href="#先说历史" class="headerlink" title="先说历史"></a>先说历史</h2><blockquote>
+<p>CSS 预处理器是一种语言用来为 CSS 增加一些编程的的特性，无需考虑浏览器的兼容性问题，例如你可以在 CSS 中使用变量、简单的程序逻辑、函数等等在编程语言中的一些基本技巧，可以让你的 CSS 更见简洁，适应性更强，代码更直观等诸多好处。</p>
+</blockquote>
+<h2 id="异同"><a href="#异同" class="headerlink" title="异同"></a>异同</h2><p>强烈推荐：<a href="http://efe.baidu.com/blog/revisiting-css-preprocessors/" target="_blank" rel="external">baidu efe 的一篇经典对比文章</a></p>
+<p><a href="https://gist.github.com/chriseppstein/674726" target="_blank" rel="external">github上一篇对比 scss 和 less 的文章，基本看一遍知识点都能回顾起来了</a></p>
+<blockquote>
+<p>Less 的基本语法属于「CSS 风格」，而 Scss、Stylus 相比之下激进一些，利用缩进、空格和换行来减少需要输入的字符。不过区别在于 Scss、Stylus 同时也兼容「CSS 风格」代码</p>
+</blockquote>
+<h3 id="基本写法"><a href="#基本写法" class="headerlink" title="基本写法"></a>基本写法</h3><p>Less &amp; SCSS：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">.box &#123;</div><div class="line">  display: block;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>Sass：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.box</div><div class="line">  display: block</div></pre></td></tr></table></figure>
+<p>Stylus：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">.box</div><div class="line">  display: block // or 	display block</div></pre></td></tr></table></figure>
+<p>stylus的写法非常灵活，即可以不写{}括号，也可以省略：号和;号</p>
+<h3 id="嵌套，父元素-amp"><a href="#嵌套，父元素-amp" class="headerlink" title="嵌套，父元素&amp;"></a>嵌套，父元素&amp;</h3><p>三者的嵌套语法都是一致的，甚至连引用父级选择器的标记 &amp; 也相同</p>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><p>三者在声明和使用的变量的时候有较大差异</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">//Less：</div><div class="line">@red: #c00;</div><div class="line"></div><div class="line">strong &#123;</div><div class="line">  color: @red;</div><div class="line">&#125;</div><div class="line">//Sass：</div><div class="line">$red: #c00;</div><div class="line"></div><div class="line">strong &#123;</div><div class="line">  color: $red;</div><div class="line">&#125;</div><div class="line">//Stylus：</div><div class="line">red = #c00</div><div class="line">strong</div><div class="line">  color: red</div></pre></td></tr></table></figure>
+<p>less 是使用 @a:b<br>scss 是使用 $a:b<br>stylus 是使用 a=b</p>
+
           
         
       
@@ -1391,6 +1288,116 @@
 
 
     
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/1970/01/01/charpter 2 在 HTML 中使用 JavaScript/" itemprop="url">
+                  未命名
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="1970-01-01T08:00:00+08:00" content="1970-01-01">
+              1970-01-01
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/1970/01/01/charpter 2 在 HTML 中使用 JavaScript/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="1970/01/01/charpter 2 在 HTML 中使用 JavaScript/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="charpter-2-在-HTML-中使用-JavaScript"><a href="#charpter-2-在-HTML-中使用-JavaScript" class="headerlink" title="charpter 2 在 HTML 中使用 JavaScript"></a>charpter 2 在 HTML 中使用 JavaScript</h1><h2 id="script-标签"><a href="#script-标签" class="headerlink" title="script 标签"></a>script 标签</h2><ol>
+<li><p>async：可选。表示应该立即下载脚本，但不应妨碍页面中的其他操作，比如下载其他资源或等待加载其他脚本。只对外部脚本文件有效。<br>async 只适用于外部脚本文件，并告诉浏览器立即下载文件。但与 defer不同的是，标记为 async 的脚本并不保证按照指定它们的先后顺序执行。<br><strong>指定 async 属性的目的是不让页面等待两个脚本下载和执行，从而异步加载页面其他内容。为此，建议异步脚本不要在加载期间修改 DOM。</strong></p>
+</li>
+<li><p>defer：可选。表示脚本可以延迟到文档完全被解析和显示之后再执行。只对外部脚本文件有效。IE7 及更早版本对嵌入脚本也支持这个属性。HTML5 规范要求脚本按照它们出现的先后顺序执行，各浏览器实现的时候不一定按顺序执行。<br><strong>脚本会被延迟到整个页面都解析完毕后再运行。相当于告诉浏览器立即下载，但延迟执行。</strong></p>
+</li>
+</ol>
+<p>无论如何包含代码，只要不存在 defer 和 async 属性，浏览器都会按照<code>&lt;script&gt;</code>元素在页面中出现的先后顺序对它们依次进行解析。换句话说，在第一个<code>&lt;script&gt;</code>元素包含的代码解析完成后，第二个<code>&lt;script&gt;</code>包含的代码才会被解析，然后才是第三个、第四个……</p>
+<p>不要把script标签放在头部，应该放在<code>&lt;/body&gt;</code>前面，因为script标签一旦出现便会阻塞页面的渲染，导致页面出现白屏。而放在底部则不会阻塞页面的渲染。用户也会因为浏览器窗口显示空白页面的时间缩短而感到打开页面的速度加快了。</p>
+<p>在包含外部 JavaScript 文件时，必须将 src 属性设置为指向相应文件的 URL。<strong>而这个文件既可以是与包含它的页面位于同一个服务器上的文件，也可以是其他任何域中的文件。和image类似，可以跨域</strong></p>
+<p> 使用 defer 属性可以让脚本在文档完全呈现之后再执行。延迟脚本总是按照指定它们的顺序执行。<br> 使用 async 属性可以表示当前脚本不必等待其他脚本，也不必阻塞文档呈现。不能保证异步脚本按照它们在页面中出现的顺序执行。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
   </section>
 
   
@@ -1436,7 +1443,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">36</span>
+              <span class="site-state-item-count">35</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
